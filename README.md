@@ -40,6 +40,49 @@ mkdir Up&& cd Up
 wget https://github.com/daviiid99/daviiid99/releases/download/honami/Up.apk
 cd ../../../../../../../../
 ```
+# Replace Default Wallpaper
+```
+cd vendor/lineage/overlay/common/frameworks/base/core/res/res/drawable-hdpi
+rm default_wallpaper.png
+wget https://github.com/daviiid99/daviiid99/releases/download/honami/default_wallpaper.png
+cd ../
+
+cd drawable-nodpi
+rm default_wallpaper.png
+wget https://github.com/daviiid99/daviiid99/releases/download/honami/default_wallpaper.png
+cd ../
+
+cd drawable-sw600dp-nodpi
+rm default_wallpaper.png
+wget https://github.com/daviiid99/daviiid99/releases/download/honami/default_wallpaper.png
+cd ../
+
+cd drawable-sw720dp-nodpi
+rm default_wallpaper.png
+wget https://github.com/daviiid99/daviiid99/releases/download/honami/default_wallpaper.png
+cd ../
+
+cd drawable-xhdpi
+rm default_wallpaper.png
+wget https://github.com/daviiid99/daviiid99/releases/download/honami/default_wallpaper.png
+cd ../
+
+cd drawable-xxhdpi
+rm default_wallpaper.png
+wget https://github.com/daviiid99/daviiid99/releases/download/honami/default_wallpaper.png
+cd ../
+
+cd drawable-xxhdpi
+rm default_wallpaper.png
+wget https://github.com/daviiid99/daviiid99/releases/download/honami/default_wallpaper.png
+cd ../
+
+cd drawable-xxxhdpi
+rm default_wallpaper.png
+wget https://github.com/daviiid99/daviiid99/releases/download/honami/default_wallpaper.png
+cd ../../../../../../../../../../
+```
+
 <br/>
 
 Build:
