@@ -23,6 +23,7 @@ git clone -b samsung_j5nlte  https://github.com/daviiid99/LineageOS_J5-2015 devi
 git clone -b samsung_j5_common https://github.com/daviiid99/LineageOS_J5-2015 device/samsung/j5-common
 git clone -b samsung_hardware  https://github.com/daviiid99/LineageOS_J5-2015 hardware/samsung
 git clone -b sony_boringssl-compat https://github.com/daviiid99/LineageOS_J5-2015 external/sony/boringssl-compat
+git clone -b master https://gitlab.opengapps.org/opengapps/arm.git vendor/opengapps/sources/arm
 
 # Build
 brunch j5nlte
