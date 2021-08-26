@@ -4,13 +4,13 @@
 
 This is a repo for my UNOFFICIAL LineageOS builds for the Samsung J5 (2015) 
 
-# Supported Devices/ Variants
+# Supported Devices
 | Model                   | Codename                   | Latest Build
 | :---------------------- |:----------------------     |:----------------------|
-|SAMSUNG Galaxy J5 SM-J500FN |j5nlte| Here|
-SAMSUNG Galaxy J5 SM-J500F/G/M/NO/Y |j5lte| Here|
-SAMSUNG Galaxy J5 SM-J5008| j5ltechn| Here|
-SAMSUNG Galaxy J5 SM-J500H| j53gxx| Here|
+|SAMSUNG Galaxy J5 SM-J500FN |j5nlte| <a href="https://github.com/daviiid99/LineageOS_J5-2015/releases/tag/j5nlte_20210826">Here</a>|
+SAMSUNG Galaxy J5 SM-J500F/G/M/NO/Y |j5lte| <a href="https://github.com/daviiid99/LineageOS_J5-2015/releases/tag/j5lte_20210826">Here</a>|
+SAMSUNG Galaxy J5 SM-J5008| j5ltechn| <a href="https://github.com/daviiid99/LineageOS_J5-2015/releases/tag/j5ltechn_20210826">Here</a>|
+SAMSUNG Galaxy J5 SM-J500H| j53gxx| <a href="https://github.com/daviiid99/LineageOS_J5-2015/releases/tag/j53gxx_20210826">Here</a>|
 
 # Credits
 Imported sources from <a href="https://github.com/Galaxy-MSM8916">Samsung MSM8916 Devices</a>
