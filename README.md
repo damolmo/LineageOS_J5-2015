@@ -1,32 +1,88 @@
-# LineageOS 18.1 Builds for  Samsung Galaxy J5 (2015)
+# SAMSUNG Galaxy J5 (j5nlte)
+<br/>
 
-<img src="https://github.com/daviiid99/LineageOS_J5-2015/blob/main/logo.png">
+## Build Instructions with manifest
 
-This is a repo for my UNOFFICIAL LineageOS builds for the Samsung J5 (2015) (j5nlte)
-
-
-# Build Steps
+Initialize LineageOS repo:
 ```
-#Sync
 mkdir -p ~/android/lineage
 cd ~/android/lineage
 repo init -u git://github.com/LineageOS/android.git -b lineage-18.1
+```
+
+Download latest manifest:
+```
+mkdir -p .repo/local_manifests
+curl https://raw.githubusercontent.com/daviiid99/LineageOS_J5-2015/Manifest/j5.xml > .repo/local_manifests/j5.xml
+
+```
+Sync repo:
+```
 repo sync
 source build/envsetup.sh
+```
 
-# Repos
-git clone -b samsung_qcom  https://github.com/daviiid99/LineageOS_J5-2015 device/samsung/qcom-common
-git clone -b samsung_vendor  https://github.com/daviiid99/LineageOS_J5-2015 vendor/samsung
-git clone -b samsung_msm8916_common  https://github.com/daviiid99/LineageOS_J5-2015 device/samsung/msm8916-common
-git clone -b samsung_kernel_msm8916  https://github.com/daviiid99/LineageOS_J5-2015 kernel/samsung/msm8916
-git clone -b samsung_j5nlte  https://github.com/daviiid99/LineageOS_J5-2015 device/samsung/j5nlte
-git clone -b samsung_j5_common https://github.com/daviiid99/LineageOS_J5-2015 device/samsung/j5-common
-git clone -b samsung_hardware  https://github.com/daviiid99/LineageOS_J5-2015 hardware/samsung
-git clone -b sony_boringssl-compat https://github.com/daviiid99/LineageOS_J5-2015 external/sony/boringssl-compat
+Apply patches:
+```
+patch -d frameworks/base -p1 < RPatches/Disable_Wallpaper_Zoom.patch #Fixes Android R Wallpaper Zoom
+ 
+ ```
+(Optional) Replace default wallpaper with LineageOS brand logo wallpaper
+ ```
+cd vendor/lineage/overlay/common/frameworks/base/core/res/res/drawable-hdpi
+rm default_wallpaper.png
+wget https://github.com/daviiid99/daviiid99/releases/download/honami/default_wallpaper.png
+cd ../
 
-# Build
+cd drawable-nodpi
+rm default_wallpaper.png
+wget https://github.com/daviiid99/daviiid99/releases/download/honami/default_wallpaper.png
+cd ../
+
+cd drawable-sw600dp-nodpi
+rm default_wallpaper.png
+wget https://github.com/daviiid99/daviiid99/releases/download/honami/default_wallpaper.png
+cd ../
+
+cd drawable-sw720dp-nodpi
+rm default_wallpaper.png
+wget https://github.com/daviiid99/daviiid99/releases/download/honami/default_wallpaper.png
+cd ../
+
+cd drawable-xhdpi
+rm default_wallpaper.png
+wget https://github.com/daviiid99/daviiid99/releases/download/honami/default_wallpaper.png
+cd ../
+
+cd drawable-xxhdpi
+rm default_wallpaper.png
+wget https://github.com/daviiid99/daviiid99/releases/download/honami/default_wallpaper.png
+cd ../
+
+cd drawable-xxxhdpi
+rm default_wallpaper.png
+wget https://github.com/daviiid99/daviiid99/releases/download/honami/default_wallpaper.png
+cd ../../../../../../../../../../
+```
+
+(Optional) LineageOS Updater app shorcut in drawer
+```
+cd out/target/product/honami/system/product/priv-app
+mkdir Up&& cd Up
+wget https://github.com/daviiid99/daviiid99/releases/download/honami/Up.apk
+cd ../../../../../../../../
+```
+
+Build:
+```
 brunch j5nlte
 ```
 
-# Credits
-Imported sources from <a href="https://github.com/Galaxy-MSM8916">Samsung MSM8916 Devices</a>
+<br/>
+NOTE: If the build process fails with the following error: 
+invalid file path 'frameworks/base/core/res/res/values/config.xml.orig'
+<br/>Do:
+
+```
+rm ~/android/lineage/frameworks/base/core/res/res/values/config.xml.orig
+```
