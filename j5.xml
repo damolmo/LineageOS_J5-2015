@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <project name="daviiid99/LineageOS_J5-2015" path="device/samsung/qcom-common" revision="samsung_qcom" />
+  <project name="daviiid99/LineageOS_J5-2015" path="vendor/samsung" revision="samsung_vendor" />
+  <project name="daviiid99/LineageOS_J5-2015" path="device/samsung/msm8916-common" revision="samsung_msm8916_common" />
+  <project name="daviiid99/LineageOS_J5-2015" path="kernel/samsung/msm8916" revision="samsung_kernel_msm8916" />
+  <project name="daviiid99/LineageOS_J5-2015" path="device/samsung/j5nlte" revision="samsung_j5nlte" />
+  <project name="daviiid99/LineageOS_J5-2015" path="device/samsung/j5-common" revision="samsung_j5_common" />
+  <project name="daviiid99/LineageOS_J5-2015" path="hardware/samsung" revision="samsung_hardware" />
+  <project name="daviiid99/LineageOS_J5-2015" path="external/sony/boringssl-compat" revision="sony_boringnssl-compat" />
+  <project name="daviiid99/LineageOS_J5-2015" path="RPatches/" revision="patches" />
+</manifest>
