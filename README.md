@@ -28,44 +28,7 @@ Apply patches:
 patch -d frameworks/base -p1 < RPatches/Disable_Wallpaper_Zoom.patch #Fixes Android R Wallpaper Zoom
  
  ```
-(Optional) Replace default wallpaper with LineageOS brand logo wallpaper
- ```
-cd vendor/lineage/overlay/common/frameworks/base/core/res/res/drawable-hdpi
-rm default_wallpaper.png
-wget https://github.com/daviiid99/daviiid99/releases/download/honami/default_wallpaper.png
-cd ../
-
-cd drawable-nodpi
-rm default_wallpaper.png
-wget https://github.com/daviiid99/daviiid99/releases/download/honami/default_wallpaper.png
-cd ../
-
-cd drawable-sw600dp-nodpi
-rm default_wallpaper.png
-wget https://github.com/daviiid99/daviiid99/releases/download/honami/default_wallpaper.png
-cd ../
-
-cd drawable-sw720dp-nodpi
-rm default_wallpaper.png
-wget https://github.com/daviiid99/daviiid99/releases/download/honami/default_wallpaper.png
-cd ../
-
-cd drawable-xhdpi
-rm default_wallpaper.png
-wget https://github.com/daviiid99/daviiid99/releases/download/honami/default_wallpaper.png
-cd ../
-
-cd drawable-xxhdpi
-rm default_wallpaper.png
-wget https://github.com/daviiid99/daviiid99/releases/download/honami/default_wallpaper.png
-cd ../
-
-cd drawable-xxxhdpi
-rm default_wallpaper.png
-wget https://github.com/daviiid99/daviiid99/releases/download/honami/default_wallpaper.png
-cd ../../../../../../../../../../
-```
-
+ 
 (Optional) LineageOS Updater app shorcut in drawer
 ```
 cd out/target/product/j5nlte/system/product/priv-app
