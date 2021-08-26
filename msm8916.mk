@@ -16,8 +16,7 @@
 
 # Inherit from common
 $(call inherit-product, device/samsung/qcom-common/qcom-common.mk)
-
-$(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk
+$(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
 
 # Enable updating of APEXes
 $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
