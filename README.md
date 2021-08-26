@@ -26,7 +26,6 @@ source build/envsetup.sh
 Apply patches:
 ```
 patch -d frameworks/base -p1 < RPatches/Disable_Wallpaper_Zoom.patch #Fixes Android R Wallpaper Zoom
- 
  ```
  
 (Optional) LineageOS Updater app shorcut in drawer
@@ -46,10 +45,3 @@ brunch j53gxx #for SM-J500H
 ```
 
 <br/>
-NOTE: If the build process fails with the following error: 
-invalid file path 'frameworks/base/core/res/res/values/config.xml.orig'
-<br/>Do:
-
-```
-rm ~/android/lineage/frameworks/base/core/res/res/values/config.xml.orig
-```
