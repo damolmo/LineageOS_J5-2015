@@ -1,7 +1,8 @@
-# SAMSUNG Galaxy J5 (j5nlte)
+# SAMSUNG Galaxy J5 | Manifest
 <br/>
 
 ## Build Instructions with manifest
+<br/>
 
 Initialize LineageOS repo:
 ```
