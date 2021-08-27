@@ -1,0 +1,18 @@
+#============= system_app ==============
+allow system_app apex_service:service_manager find;
+allow system_app fm_prop:property_service set;
+allow system_app proc_pagetypeinfo:file { getattr open read };
+allow system_app sysfs_kgsl_gpuclk:file { getattr open read };
+allow system_app sysfs_vibrator:dir search;
+allow system_app sysfs_zram:dir search;
+allow system_app sysfs_zram:file { getattr open read };
+allow system_app system_data_file:file open;
+allow system_app system_suspend_control_service:service_manager find;
+allow system_app time_daemon:unix_stream_socket connectto;
+
+binder_call(system_app, apexd)
+binder_call(system_app, installd)
+binder_call(system_app, netd)
+binder_call(system_app, vold)
+binder_call(system_app, wificond)
+

@@ -1,0 +1,6 @@
+#============= fsck ==============
+allow fsck block_device:blk_file { ioctl open read write };
+allow fsck persist_data_file:dir getattr;
+allow fsck self:capability dac_override;
+allow fsck tmpfs:blk_file getattr;
+

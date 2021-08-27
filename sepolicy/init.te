@@ -1,0 +1,22 @@
+#============= init ==============
+allow init block_device:blk_file write;
+allow init cache_file:file rename;
+allow init efs_file:dir mounton;
+allow init fm_qsoc_patches_exec:file execute_no_trans;
+allow init fm_radio_device:chr_file { ioctl open read };
+allow init { default_android_hwservice hal_authsecret_hwservice hal_drm_hwservice hal_power_stats_hwservice hidl_base_hwservice }:hwservice_manager add;
+allow init { hwservicemanager mediadrmserver }:binder { call transfer };
+allow init self:process execmem;
+allow init self:socket { read write };
+allow init socket_device:sock_file unlink;
+allow init sysfs:file { open read setattr write };
+allow init sysfs_batteryinfo:file { setattr };
+allow init sysfs_fm:file { open write };
+allow init sysfs_leds:lnk_file read;
+allow init system_file:{ dir file } { mounton relabelfrom };
+allow init { system_file vendor_file vendor_toolbox_exec }:file execute_no_trans;
+allow init vfat:dir search;
+allow init vfat:file { getattr open read };
+allow init vndbinder_device:chr_file { ioctl open read write };
+allow init wcnss_device:chr_file { open read write };
+

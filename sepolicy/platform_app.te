@@ -1,0 +1,5 @@
+#============= platform_app ==============
+allow platform_app bluetooth_data_file:dir getattr;
+allow platform_app sysfs_kgsl_gpuclk:file { getattr open read };
+allow platform_app system_app_data_file:dir getattr;
+

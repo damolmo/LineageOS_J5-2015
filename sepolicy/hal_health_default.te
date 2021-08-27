@@ -1,0 +1,3 @@
+#============= hal_health_default ==============
+allow hal_health_default sysfs:file { getattr open read };
+

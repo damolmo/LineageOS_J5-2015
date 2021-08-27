@@ -1,0 +1,5 @@
+#============= crash_dump ==============
+allow crash_dump hwservicemanager_prop:file { getattr open };
+allow crash_dump { init keystore }:process ptrace;
+allow crash_dump rootfs:dir { open read };
+
