@@ -218,6 +218,9 @@ PRODUCT_COPY_FILES += \
 
 # Media
 PRODUCT_PACKAGES += \
+   libextmedia_jni \
+    libdashplayer \
+    libdivxdrmdecrypt \
     libdrmclearkeyplugin \
     libstagefrighthw
 
