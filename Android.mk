@@ -6,6 +6,9 @@ include $(call all-subdir-makefiles,$(LOCAL_PATH))
 
 include $(CLEAR_VARS)
 
+# Build process
+LOCAL_CHECK_ELF_FILES := false
+
 # CMN
 CMN_IMAGES := \
 	cmnlib.b00 cmnlib.b01 cmnlib.b02 cmnlib.b03 cmnlib.mdt
