@@ -279,7 +279,8 @@ PRODUCT_PACKAGES += \
     librmnetctl \
     libshim_secril \
     libxml2 \
-    macloader
+    macloader \
+    libcutils_shim
 
 # Rootdir
 PRODUCT_PACKAGES += \
