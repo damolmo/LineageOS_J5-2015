@@ -10,6 +10,6 @@
   <project name="daviiid99/LineageOS_J5-2015" path="device/samsung/j53gxx" revision="samsung_j53gxx" />
   <project name="daviiid99/LineageOS_J5-2015" path="device/samsung/j5-common" revision="samsung_j5_common" />
   <project name="daviiid99/LineageOS_J5-2015" path="hardware/samsung" revision="samsung_hardware" />
-  <project name="daviiid99/LineageOS_J5-2015" path="external/sony/boringssl-compat" revision="sony_boringnssl-compat" />
+  <project name="daviiid99/LineageOS_J5-2015" path="external/sony/boringssl-compat" revision="sony_boringssl-compat" />
   <project name="daviiid99/LineageOS_J5-2015" path="RPatches/" revision="patches" />
 </manifest>
