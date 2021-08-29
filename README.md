@@ -41,6 +41,8 @@ mkdir Up&& cd Up
 wget https://github.com/daviiid99/daviiid99/releases/download/honami/Up.apk
 cd ../../../../../../../../
 ```
+ <br/>
+ 
 (Optional) Replace Default Wallpaper
 ```
 cd vendor/lineage/overlay/common/frameworks/base/core/res/res/drawable-hdpi
