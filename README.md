@@ -88,6 +88,14 @@ cd ../../../../../../../../../../
 
 <br/>
 
+(Optional) OpenGApps configure source
+```
+sudo apt install git-lfs
+git lfs install
+repo forall -c git lfs pull
+```
+<br/>
+
 Build:
 ```
 brunch j5nlte #for SM-J500FN
