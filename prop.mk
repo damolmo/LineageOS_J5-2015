@@ -168,8 +168,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.rild.nitz_short_ons_3="" \
     ril.subscription.types=NV,RUIM \
     DEVICE_PROVISIONED=1 \
-    rild.libpath=/vendor/lib/libsec-ril.so \
-    ro.multisim.set_audio_params=true
+    rild.libpath=/system/lib/libsec-ril.so
 
 # SAMP SPCM
 PRODUCT_PROPERTY_OVERRIDES += \
