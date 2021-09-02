@@ -311,6 +311,12 @@ PRODUCT_ENFORCE_RRO_TARGETS := \
 # Seccomp
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/seccomp/mediacodec-seccomp.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/mediacodec.policy
+    
+# RIL
+PRODUCT_PACKAGES += \
+	libril \
+	librilutils \
+	rild
 
 # Security configuration file
 PRODUCT_COPY_FILES += \
@@ -321,6 +327,12 @@ PRODUCT_PACKAGES += \
     android.hardware.sensors@1.0-impl \
     android.hardware.sensors@1.0-service \
     sensors.msm8916
+    
+ # Thermal
+PRODUCT_PACKAGES += \
+    android.hardware.thermal@1.0-impl \
+    android.hardware.thermal@1.0-service \
+    thermal.msm8916
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
