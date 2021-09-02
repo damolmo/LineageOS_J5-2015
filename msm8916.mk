@@ -166,6 +166,15 @@ PRODUCT_PACKAGES += \
     gps.msm8916 \
     libshim_gps \
     liblocadapterbase_shim
+    
+    # Telephony
+PRODUCT_PACKAGES += \
+    ims-ext-common_system \
+    telephony-ext
+
+PRODUCT_BOOT_JARS += \
+    ims-ext-common_system \
+    telephony-ext
 
 # Health HAL
 PRODUCT_PACKAGES += \
