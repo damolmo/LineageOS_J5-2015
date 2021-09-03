@@ -205,6 +205,12 @@ TARGET_LD_SHIM_LIBS := \
     /system/vendor/lib/libgeofence.so|liblocadapterbase_shim.so \
     /system/lib/libsec-ril.so|/vendor/lib/libcutils_shim.so \
     /system/lib/libsec-ril-dsds.so|/vendor/lib/libcutils_shim.so
+    
+# Treble / Radio
+    
+    ifneq ($(BOARD_HAVE_RADIO), false)
+        DEVICE_MANIFEST_FILE += device/samsung/msm8916-common/treble-manifest-radio.xml
+    endif
 
 # Time services
 BOARD_USES_QC_TIME_SERVICES := true
