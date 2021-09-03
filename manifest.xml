@@ -26,6 +26,15 @@
             <instance>default</instance>
         </interface>
     </hal>
+	 <hal format="hidl">
+        <name>com.qualcomm.qti.bluetooth_audio</name>
+        <transport>hwbinder</transport>
+        <version>1.0</version>
+        <interface>
+            <name>IBluetoothAudio</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
     <hal format="hidl">
         <name>android.hardware.bluetooth.a2dp</name>
         <transport>hwbinder</transport>
