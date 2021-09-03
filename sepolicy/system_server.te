@@ -5,3 +5,4 @@ allow system_server efs_file:dir search;
 allow system_server init:binder call;
 allow system_server sysfs_batteryinfo:file { getattr open write };
 allow system_server vfat:dir { open read };
+get_prop(system_server, vendor_security_patch_level_prop);
