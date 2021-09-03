@@ -101,9 +101,7 @@ BOARD_HAVE_QCOM_FM := true
 AUDIO_FEATURE_ENABLED_FM_POWER_OPT := true
 
 # HIDL
-DEVICE_MANIFEST_FILE += $(COMMON_PATH)/manifest.xml
 DEVICE_MATRIX_FILE := $(COMMON_PATH)/compatibility_matrix.xml
-PRODUCT_ENFORCE_VINTF_MANIFEST_OVERRIDE := true
 
 # Init
 TARGET_INIT_VENDOR_LIB ?= //$(COMMON_PATH):libinit_msm8916
@@ -207,10 +205,11 @@ TARGET_LD_SHIM_LIBS := \
     /system/lib/libsec-ril-dsds.so|/vendor/lib/libcutils_shim.so
     
 # Treble / Radio
-    
+DEVICE_MANIFEST_FILE += $(COMMON_PATH)/treble-manifest.xml
     ifneq ($(BOARD_HAVE_RADIO), false)
         DEVICE_MANIFEST_FILE += device/samsung/msm8916-common/treble-manifest-radio.xml
     endif
+PRODUCT_ENFORCE_VINTF_MANIFEST_OVERRIDE := true
 
 # Time services
 BOARD_USES_QC_TIME_SERVICES := true
