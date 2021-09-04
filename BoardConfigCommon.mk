@@ -14,6 +14,7 @@
 # limitations under the License.
 
 COMMON_PATH := device/samsung/msm8916-common
+BOARD_VENDOR := samsung
 
 # Inherit from common
 -include device/samsung/qcom-common/BoardConfigCommon.mk
@@ -32,6 +33,11 @@ TARGET_CPU_VARIANT_RUNTIME := cortex-a53
 
 # ANT+
 BOARD_ANT_WIRELESS_DEVICE := "vfs-prerelease"
+
+# CMHW
+JAVA_SOURCE_OVERLAYS += \
+	org.lineageos.hardware|hardware/samsung/lineagehw|**/*.java \
+	org.lineageos.hardware|$(COMMON_PATH)/lineagehw|**/*.java
 
 # Audio
 AUDIO_CONFIG_PATH := hardware/qcom-caf/msm8916/audio/configs
