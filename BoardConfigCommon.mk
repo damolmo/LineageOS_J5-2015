@@ -60,6 +60,7 @@ BOARD_HAVE_BLUETOOTH_QCOM := true
 QCOM_BT_USE_BTNV := true
 BLUETOOTH_HCI_USE_MCT := true
 
+
 # Bootanimation
 TARGET_BOOTANIMATION_HALF_RES := true
 
@@ -210,12 +211,18 @@ TARGET_LD_SHIM_LIBS := \
     /system/lib/libsec-ril.so|/vendor/lib/libcutils_shim.so \
     /system/lib/libsec-ril-dsds.so|/vendor/lib/libcutils_shim.so
     
-# Treble / Radio
+# Radio manifest
 DEVICE_MANIFEST_FILE += $(COMMON_PATH)/treble-manifest.xml
     ifneq ($(BOARD_HAVE_RADIO), false)
         DEVICE_MANIFEST_FILE += device/samsung/msm8916-common/treble-manifest-radio.xml
     endif
 PRODUCT_ENFORCE_VINTF_MANIFEST_OVERRIDE := true
+
+# Bluetooth manifest
+DEVICE_MANIFEST_FILE += device/samsung/msm8916-common/treble-manifest-bluetooth.xml
+
+# DRM manifest
+DEVICE_MANIFEST_FILE += device/samsung/msm8916-common/treble-manifest-drm.xml
 
 # Time services
 BOARD_USES_QC_TIME_SERVICES := true
