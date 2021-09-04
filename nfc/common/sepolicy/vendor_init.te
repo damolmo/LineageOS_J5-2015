@@ -1,2 +1,0 @@
-#============= vendor_init ==============
-allow vendor_init nfc_data_file:dir { search setattr };
