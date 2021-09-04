@@ -1,3 +1,4 @@
 type mediadrm_vendor_data_file, file_type, data_file_type;
 type imei_efs_file, file_type;
 type sysfs_camera, fs_type, sysfs_type;
+type sysfs_kgsl_gpuclk, sysfs_type, fs_type;
