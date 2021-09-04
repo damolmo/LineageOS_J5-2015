@@ -1,21 +1,15 @@
-# System files
-#
-/(vendor|system/vendor)/bin/init\.link_ril_db\.sh u:object_r:qti_init_shell_exec:s0
-
 # rootfs
 /firmware-modem                                         u:object_r:firmware_file:s0
 /tombstones                                             u:object_r:rootfs:s0
 
-# Battery
-/sys/devices/battery\.[0-9]+/power_supply(/.*)? u:object_r:sysfs_batteryinfo:s0
-
-# Lights
-/sys/class/leds(/.*)? u:object_r:sysfs_leds:s0
-/(vendor|system/vendor)/bin/hw/android\.hardware\.light@2\.0-service.msm8916 u:object_r:hal_light_default_exec:s0
-
 # DRM
 /(vendor|system/vendor)/bin/hw/android\.hardware\.drm@1\.3-service\.clearkey u:object_r:hal_drm_clearkey_exec:s0
-	@@ -13,7 +34,7 @@
+/data/vendor/mediadrm(/.*)? u:object_r:mediadrm_vendor_data_file:s0
+
+# EFS
+/efs/imei(/.*)?                                      u:object_r:imei_efs_file:s0
+
+# Camera
 /sys/devices/virtual/camera(/.*)?                           u:object_r:sysfs_camera:s0
 
 # Widevine
