@@ -13,7 +13,7 @@
 /sys/devices/virtual/camera(/.*)?                           u:object_r:sysfs_camera:s0
 
 # Widevine
-/(vendor|system/vendor)/bin/hw/android\.hardware\.drm@1\.2-service.widevine   u:object_r:hal_drm_widevine_exec:s0
+/(vendor|system/vendor)/bin/hw/android\.hardware\.drm@1\.1-service.widevine   u:object_r:hal_drm_widevine_exec:s0
 
 # Gatekeeper
 /(vendor|system/vendor)/bin/hw/android\.hardware\.gatekeeper@1\.0-service\.software	u:object_r:hal_gatekeeper_default_exec:s0
