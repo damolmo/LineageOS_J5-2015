@@ -19,6 +19,9 @@ BOARD_VENDOR := samsung
 # Inherit from common
 -include device/samsung/qcom-common/BoardConfigCommon.mk
 
+# Includes
+TARGET_SPECIFIC_HEADER_PATH += $(COMMON_PATH)/include
+
 BUILD_BROKEN_DUP_RULES := true
 
 # Architecture/platform
