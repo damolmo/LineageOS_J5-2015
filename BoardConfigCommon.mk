@@ -218,9 +218,6 @@ TARGET_LD_SHIM_LIBS := \
     
 # Radio manifest
 DEVICE_MANIFEST_FILE += $(COMMON_PATH)/treble-manifest.xml
-    ifneq ($(BOARD_HAVE_RADIO), false)
-        DEVICE_MANIFEST_FILE += device/samsung/msm8916-common/treble-manifest-radio.xml
-    endif
 PRODUCT_ENFORCE_VINTF_MANIFEST_OVERRIDE := true
 
 # Bluetooth manifest
