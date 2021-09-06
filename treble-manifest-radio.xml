@@ -16,4 +16,5 @@
             <instance>default</instance>
         </interface>
         <fqname>@1.0::IRadioConfig/default</fqname>
+         </hal>
 </manifest>
