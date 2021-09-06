@@ -13,7 +13,7 @@
 /sys/devices/virtual/camera(/.*)?                           u:object_r:sysfs_camera:s0
 
 # Radio
-/(vendor|system/vendor)/bin/hw/android\.hardware\.radio\.config@1\.1-service  u:object_r:hal_radio_config_default_exec:s0
+/(vendor|system/vendor)/bin/hw/android\.hardware\.radio\.config@1\.2-service  u:object_r:hal_radio_config_default_exec:s0
 
 # Widevine
 /(vendor|system/vendor)/bin/hw/android\.hardware\.drm@1\.1-service.widevine   u:object_r:hal_drm_widevine_exec:s0
