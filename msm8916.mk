@@ -345,7 +345,7 @@ PRODUCT_PACKAGES += \
     thermal.msm8916
     
    # Radio
-PPRODUCT_PACKAGES += \
+PRODUCT_PACKAGES += \
 android.hardware.radio.config@1.0-service
 
 # Soong namespaces
