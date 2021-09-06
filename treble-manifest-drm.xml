@@ -1,5 +1,5 @@
 <manifest version="1.0" type="device">
-<hal format="hidl">
+  <hal format="hidl">
         <name>android.hardware.drm</name>
         <transport>hwbinder</transport>
         <version>1.0</version>
