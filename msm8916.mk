@@ -345,6 +345,10 @@ PRODUCT_PACKAGES += \
     thermal.msm8916
     
    # Radio
+   PRODUCT_PACKAGES += \
+android.hardware.radio@1.0 \
+android.hardware.radio.config@1.0 \
+android.hardware.radio.config@1.0-service
 DEVICE_MANIFEST_FILE += device/samsung/msm8916-common/treble-manifest-radio.xml
 
 # Soong namespaces
