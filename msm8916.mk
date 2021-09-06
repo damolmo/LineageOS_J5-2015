@@ -347,6 +347,7 @@ PRODUCT_PACKAGES += \
    # Radio
 PRODUCT_PACKAGES += \
     android.hardware.radio@1.0-service \
+    android.hardware.radio@1.0 
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
