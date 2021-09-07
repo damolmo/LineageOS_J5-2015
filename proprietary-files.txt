@@ -104,11 +104,11 @@ vendor/lib/libbccQTI.so
 vendor/lib/libC2D2.so|9ce02ff41421ec64d26b571c479fe6ca
 vendor/lib/libc2d30-a3xx.so|91c8e82b10afda25a727ffc94dad5bc5
 vendor/lib/libc2d30-a4xx.so|5fb624bd78b3ac8bacd2a9f1226db103
-vendor/lib/libCB.so|40daed628f19ef2f625ca7fca559d0b7
-vendor/lib/libgsl.so|06a985c79c24b850ec4a03e89bd4e208
+vendor/lib/libCB.so|ef749cfbfe44dabe1c42fef3980f4407bad5c531
+vendor/lib/libgsl.so|158be0351abcf84b939a1c8a9838eed526ccc9e2
 vendor/lib/libllvm-glnext.so|df95f2de1e3468b8caf8ecb6839a6477
 vendor/lib/libllvm-qcom.so|8c40927b9b56047447c42d0a23081ef1
-vendor/lib/libOpenCL.so|c68ff0a56dc1c98be520b08e7eb6fee1
+vendor/lib/libOpenCL.so|e1f8c3fdb58fa9fbb1465d909e9ab7ba31176bd6
 vendor/lib/librs_adreno.so|40dbf893c0fd2ad8583d9937e9c92d3f
 vendor/lib/librs_adreno_sha1.so|4f695154805ab290651af850fad24d81
 vendor/lib/libRSDriver_adreno.so|bd572f3fc34e9dd747753f14a73fb133
@@ -248,7 +248,7 @@ lib/libstagefright_foundation.so:lib/libstagefright_foundation-old.so
 vendor/lib/libwvm.so|a1717e49380c936bb409962a3b20942156bab4c1
 
 vendor/lib/libWVStreamControlAPI_L1.so|74e4a4ba035ed5da9b81cc2cc3929151
-vendor/lib/mediadrm/libwvdrmengine.so|a1fe975741ac399133a6a5125d6b6b260ce9cba3
+vendor/lib/mediadrm/libwvdrmengine.so|c38d221dcc260bc48aa033ee5e9cc9929e725987
 vendor/lib/libwvhidl.so|e6a340508a2e81f6e1d54d4ee6515eb69af18aa5
 vendor/bin/hw/android.hardware.drm@1.1-service.widevine
 vendor/etc/init/android.hardware.drm@1.1-service.widevine.rc
