@@ -350,8 +350,6 @@ android.hardware.radio@1.0-impl \
 android.hardware.radio@1.0-service
 DEVICE_MANIFEST_FILE += device/samsung/msm8916-common/treble-manifest-radio.xml
 
-android.hardware.drm@1.3-service-lazy.clearkey
-
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
