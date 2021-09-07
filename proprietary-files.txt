@@ -241,4 +241,7 @@ vendor/lib/drm/libdrmwvmplugin.so|6cfb61cd247076409a3a4e3f6ddecf24
 vendor/lib/libwvdrm_L1.so|a19e8a30943ed66d51f58504673e72c4
 vendor/lib/libwvm.so|dcd816349037aa40f0e5ff9d141c70cc
 vendor/lib/libWVStreamControlAPI_L1.so|74e4a4ba035ed5da9b81cc2cc3929151
-vendor/lib/mediadrm/libwvdrmengine.so|1987f7a517acfbec62438a0515a9aa87a363f0f7
+vendor/lib/mediadrm/libwvdrmengine.so|a1fe975741ac399133a6a5125d6b6b260ce9cba3
+vendor/lib/libwvhidl.so|e6a340508a2e81f6e1d54d4ee6515eb69af18aa5
+vendor/bin/hw/android.hardware.drm@1.1-service.widevine
+vendor/etc/init/android.hardware.drm@1.1-service.widevine.rc
