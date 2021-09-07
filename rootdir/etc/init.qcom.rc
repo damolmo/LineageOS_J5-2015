@@ -207,7 +207,14 @@ on boot
     chown radio system /sys/devices/platform/sec-thermistor/temperature
     chown radio system /sys/class/power_supply/battery/siop_level
     chown radio system /sys/class/power_supply/battery/test_charge_current
-
+    
+# Radio permissions
+service android.hardware.radio@1.1::IRadio/slot1 /system/bin/hwservicemanager
+  class core
+  
+# Widevine permissions
+  service android.hardware.drm@1.1::IDrmFactory/widevine /system/bin/hwservicemanager
+  class core
 
 # Vibrator
     chmod 0644 /sys/class/timed_output/vibrator/pwm_value
@@ -403,6 +410,7 @@ on late-fs
     wait_for_prop hwservicemanager.ready true
     # Mount RW partitions which need run fsck
     mount_all /vendor/etc/fstab.qcom --late
+
 
 # msm specific files that need to be created on /data
 on post-fs-data
