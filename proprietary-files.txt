@@ -246,12 +246,12 @@ lib/libstagefright_foundation.so:lib/libstagefright_foundation-old.so
 #Hex-Edited for old libstagefright_foundation.so
 vendor/lib/libwvm.so|a1717e49380c936bb409962a3b20942156bab4c1
 vendor/lib/libWVStreamControlAPI_L1.so|74e4a4ba035ed5da9b81cc2cc3929151
-vendor/lib/mediadrm/libwvdrmengine.so|a1fe975741ac399133a6a5125d6b6b260ce9cba3
-vendor/lib/libwvhidl.so|e6a340508a2e81f6e1d54d4ee6515eb69af18aa5
-vendor/bin/hw/android.hardware.drm@1.1-service.widevine
-vendor/etc/init/android.hardware.drm@1.1-service.widevine.rc
+vendor/lib/libwvhidl.so |0881cb4ca98d38f4d033a0b4dd971e74e067942c
+vendor/lib/mediadrm/libwvdrmengine.so |102f6287cb9949be9999f94f803b4113e4030a34
 
-# needed for compat
-lib/libcutils.so:lib/libcutils-old.so
-lib/libprotobuf-cpp-lite.so:lib/libprotobuf-cpp-lite-old.so
-lib/libprotobuf-cpp-full.so:lib/libprotobuf-cpp-full-old.so
+# DRM services - from Channel QPY30.52-2
+vendor/bin/hw/android.hardware.drm@1.2-service.widevine |2491689eba91885a5e61f6c83f35f0c4c64f52d8
+vendor/etc/init/android.hardware.drm@1.2-service.widevine.rc |e3cb732c0bd519988100675edf385d947abf5f6c
+
+
+
