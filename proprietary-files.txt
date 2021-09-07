@@ -82,7 +82,6 @@ bin/loc_launcher
 vendor/lib/hw/flp.default.so|48b1901aac6ce882c415dcbbffc36432
 vendor/lib/libflp.so|8ecc18a88b768e65ade0c2f900aa3699
 vendor/lib/libgeofence.so|862cfcd014939ba68c2418488c00a724
-vendor/lib/libizat_core.so|393277601ff816ab2fabe41fea68fca3
 vendor/lib/liblbs_core.so|be81bdae864452bc38544db8184303c6
 
 # Graphics - wf-crackling-7.1-TOS111B
@@ -153,7 +152,6 @@ vendor/lib/libmm-abl-oem.so
 vendor/lib/libmm-color-convertor.so
 vendor/lib/libmm-disp-apis.so
 vendor/lib/libmm-hdcpmgr.so
-vendor/lib/libmmparser.so
 vendor/lib/libmm-qdcm.so
 vendor/lib/libOmxAacDec.so
 vendor/lib/libOmxEvrcDec.so
@@ -162,6 +160,9 @@ vendor/lib/libqomx_jpegdec.so
 vendor/lib/libsd_sdk_display.so
 vendor/media/LMspeed_508.emd
 vendor/media/PFFprec_600.emd
+
+# Hex-Edited for old libstagefright_foundation.so
+vendor/lib/libmmparser.so|735561f9e7c028754346986668cc48f92480e556
 
 # Miscellaneous
 bin/ssr_diag
@@ -182,6 +183,10 @@ vendor/lib/libqti-perfd-client.so
 vendor/lib/libmm-als.so
 vendor/lib/libmm-abl.so
 vendor/lib/libdisp-aba.so
+
+# GPS
+# Hex-Edited, needs old libcutils.so
+vendor/lib/libizat_core.so|44bcda068931da7bcbc729e3c1a132e97db76546
 
 # Radio
 bin/diag_mdlog
@@ -211,8 +216,6 @@ vendor/lib/libxml.so
 
 # RIL
 lib/libaudio-ril.so:vendor/lib/libaudio-ril.so
-lib/libsecril-client.so
-vendor/lib/libril-qcril-hook-oem.so
 
 # Samsung libs
 lib/libsecnativefeature.so
@@ -239,9 +242,18 @@ vendor/lib/libTimeService.so
 # Widevine - bullhead
 vendor/lib/drm/libdrmwvmplugin.so|6cfb61cd247076409a3a4e3f6ddecf24
 vendor/lib/libwvdrm_L1.so|a19e8a30943ed66d51f58504673e72c4
-vendor/lib/libwvm.so|dcd816349037aa40f0e5ff9d141c70cc
+lib/libstagefright_foundation.so:lib/libstagefright_foundation-old.so
+
+#Hex-Edited for old libstagefright_foundation.so
+vendor/lib/libwvm.so|a1717e49380c936bb409962a3b20942156bab4c1
+
 vendor/lib/libWVStreamControlAPI_L1.so|74e4a4ba035ed5da9b81cc2cc3929151
-vendor/lib/mediadrm/libwvdrmengine.so|76d0add4f3f259030ef4ffb14dc92a2e
+vendor/lib/mediadrm/libwvdrmengine.so|a1fe975741ac399133a6a5125d6b6b260ce9cba3
 vendor/lib/libwvhidl.so|e6a340508a2e81f6e1d54d4ee6515eb69af18aa5
 vendor/bin/hw/android.hardware.drm@1.1-service.widevine
 vendor/etc/init/android.hardware.drm@1.1-service.widevine.rc
+
+# needed for compat
+lib/libcutils.so:lib/libcutils-old.so
+lib/libprotobuf-cpp-lite.so:lib/libprotobuf-cpp-lite-old.so
+lib/libprotobuf-cpp-full.so:lib/libprotobuf-cpp-full-old.so
