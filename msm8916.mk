@@ -127,7 +127,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.drm@1.1-impl \
     android.hardware.drm@1.1-service \
-   android.hardware.drm@1.3-service-lazy.clearkey
+    android.hardware.drm@1.3-service.clearkey
 
 # Encryption
 PRODUCT_PACKAGES += \
