@@ -14,6 +14,12 @@
 
 # Widevine
 /(vendor|system/vendor)/bin/hw/android\.hardware\.drm@1\.1-service.widevine   u:object_r:hal_drm_widevine_exec:s0
+/system/bin/hwservicemanager  u:object_r:android.hardware.drm@1.1::IDrmFactory/widevine_exec:s0
+
+#Radio
+/(vendor|system/vendor)/bin/hw/android\.hardware\.radio@1\.1-service u:object_r:hal_radio_default_exec:s0
+/(vendor|system/vendor)/bin/hw/android\.hardware\.radio\.config@1\.1-service u:object_r:hal_radio_config_default_exec:s0
+/system/bin/hwservicemanager  u:object_r:android.hardware.radio@1.1::IRadio/slot1_exec:s0
 
 # Gatekeeper
 /(vendor|system/vendor)/bin/hw/android\.hardware\.gatekeeper@1\.0-service\.software	u:object_r:hal_gatekeeper_default_exec:s0
