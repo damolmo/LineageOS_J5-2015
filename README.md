@@ -35,7 +35,7 @@ patch -d frameworks/base -p1 < RPatches/Disable_Wallpaper_Zoom.patch #Fixes Andr
  
  Add patched repos:
 ```
-cd hardware/qcom-caf/msm8916/display && rm -rf media && rm -rf display
+cd hardware/qcom-caf/msm8916 && rm -rf media && rm -rf display
 git clone -b samsung_qcom-caf_display https://github.com/daviiid99/LineageOS_J5-2015 display
 git clone -b samsung_qcom-caf_media https://github.com/daviiid99/LineageOS_J5-2015 media
 
