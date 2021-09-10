@@ -1,4 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
+
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+     
 <device name="Android">
     <item name="none">0</item>
     <item name="screen.on">87</item>
@@ -54,3 +57,4 @@
         <value>2</value>
     </array>
 </device>
+</resources>
