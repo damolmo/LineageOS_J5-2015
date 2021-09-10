@@ -27,7 +27,6 @@ COMMON_PATH := device/samsung/msm8916-common
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay \
-    $(LOCAL_PATH)/overlay-profile \
     $(LOCAL_PATH)/overlay-lineage
 
 # APEX
