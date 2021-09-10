@@ -19,6 +19,10 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 # Include Bluetooth config
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(LOCAL_PATH)/bluetooth
 
+# J5 overlay
+DEVICE_PACKAGE_OVERLAYS += \
+$(LOCAL_PATH)/overlay-profile 
+
 ## Device identifier. This must come after all inclusions
 PRODUCT_BRAND := samsung
 PRODUCT_MANUFACTURER := samsung
