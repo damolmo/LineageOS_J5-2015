@@ -301,6 +301,9 @@ PRODUCT_PACKAGES += \
 
 # Rootdir
 PRODUCT_PACKAGES += \
+    init.carrier.rc \
+    init.qcom.early_boot.sh \
+    init.target.rc \
     init.class_main.sh \
     init.link_ril_db.sh \
     init.qcom.bt.sh \
