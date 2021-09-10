@@ -22,6 +22,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
 $(call inherit-product-if-exists, vendor/samsung/msm8916-common/msm8916-common-vendor.mk)
 
 LOCAL_PATH := device/samsung/msm8916-common
+COMMON_PATH := device/samsung/msm8916-common
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
@@ -393,7 +394,7 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/com.android.nfc_extras.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/com.android.nfc_extras.xml \
     frameworks/native/data/etc/com.nxp.mifare.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/com.nxp.mifare.xml
 
-DEVICE_MANIFEST_FILE += $(LOCAL_PATH)/treble-manifest-nfc.xml
+DEVICE_MANIFEST_FILE += $(COMMON_PATH)/treble-manifest-nfc.xml
    
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
