@@ -81,6 +81,8 @@ void set_dsds_properties()
 	property_override("ro.telephony.ril.config", "simactivation");
 	property_override("persist.radio.multisim.config", "dsds");
 	property_override("rild.libpath2", "/vendor/lib/libsec-ril-dsds.so");
+	property_override("ro.multisim.set_audio_params", "true");
+	property_override("ro.multisim.audio_follow_default_sim", "true");
 }
 
 void set_gsm_properties()
