@@ -1,7 +1,7 @@
 <manifest version="1.0" type="device" target-level="legacy">
            <hal format="hidl">
         <name>android.hardware.radio</name>
-        <transport>hwbinder</transport>
+        <transport arch="32">passthrough</transport>
         <version>1.0</version>
         <interface>
             <name>IRadio</name>
