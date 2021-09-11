@@ -217,6 +217,8 @@ vendor/lib/libperipheral_client.so
 
 # RIL
 lib/libaudio-ril.so:vendor/lib/libaudio-ril.so
+lib/libsecril-client.so:vendor/lib/libsecril-client.so
+lib/libril-qcril-hook-oem.so:vendor/lib/libril-qcril-hook-oem.so
 
 # Samsung libs
 lib/libsecnativefeature.so
