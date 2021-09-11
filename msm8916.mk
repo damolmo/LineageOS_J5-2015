@@ -296,9 +296,9 @@ include $(LOCAL_PATH)/prop.mk
 PRODUCT_PACKAGES += \
     librmnetctl \
     libshim_secril \
+    libshim_ril \
     libxml2 \
-    macloader \
-    libcutils_shim
+    macloader
 
 # Rootdir
 PRODUCT_PACKAGES += \
@@ -335,12 +335,6 @@ PRODUCT_ENFORCE_RRO_TARGETS := \
 # Seccomp
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/seccomp/mediacodec-seccomp.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/mediacodec.policy
-    
-# RIL
-PRODUCT_PACKAGES += \
-	libril \
-	librilutils \
-	rild
 
 # Security configuration file
 PRODUCT_COPY_FILES += \
@@ -361,12 +355,6 @@ PRODUCT_PACKAGES += \
     thermal.msm8916
     
    # Radio
-   PRODUCT_PACKAGES += \
-   android.hardware.radio@1.0-impl \
-    android.hardware.radio@1.0-service \
-    android.hardware.radio@1.2-impl \
-    android.hardware.radio@1.2-service \
-    android.hardware.radio.config@1.0-service
    DEVICE_MANIFEST_FILE += device/samsung/msm8916-common/treble-manifest-radio.xml
  
 # NFC
