@@ -198,7 +198,6 @@ bin/port-bridge:vendor/bin/port-bridge
 bin/radish:vendor/bin/radish
 bin/wlandutservice:vendor/bin/wlandutservice
 bin/rmt_storage:vendor/bin/rmt_storage
-bin/qmuxd:vendor/bin/qmuxd
 lib/libwcnftms.so:vendor/lib/libwcnftms.so
 etc/plmn_delta.bin
 etc/plmn_se13.bin
