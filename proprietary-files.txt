@@ -220,6 +220,8 @@ lib/libaudio-ril.so:vendor/lib/libaudio-ril.so
 lib/libsecril-client.so:vendor/lib/libsecril-client.so
 lib/libsec-ril.so:vendor/lib/libsec-ril.so
 lib/libril-qcril-hook-oem.so:vendor/lib/libril-qcril-hook-oem.so
+lib/libril-qc-radioconfig.so:vendor/lib/libril-qc-radioconfig.so
+
 
 # Samsung libs
 lib/libsecnativefeature.so
