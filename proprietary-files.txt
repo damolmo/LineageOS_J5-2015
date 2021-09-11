@@ -197,6 +197,7 @@ bin/ptt_socket_app:vendor/bin/ptt_socket_app
 bin/port-bridge:vendor/bin/port-bridge
 bin/radish:vendor/bin/radish
 bin/wlandutservice:vendor/bin/wlandutservice
+bin/qmuxd:vendor/bin/qmuxd
 bin/rmt_storage:vendor/bin/rmt_storage
 lib/libwcnftms.so:vendor/lib/libwcnftms.so
 etc/plmn_delta.bin
@@ -211,6 +212,8 @@ vendor/lib/libmdmdetect.so
 vendor/lib/libsubsystem_control.so
 vendor/lib/libSubSystemShutdown.so
 vendor/lib/libxml.so
+vendor/lib/libnetmgr.so
+vendor/lib/libperipheral_client.so
 
 # RIL
 lib/libaudio-ril.so:vendor/lib/libaudio-ril.so
