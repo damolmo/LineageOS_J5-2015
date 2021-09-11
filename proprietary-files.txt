@@ -189,35 +189,30 @@ vendor/lib/libdisp-aba.so
 vendor/lib/libizat_core.so|44bcda068931da7bcbc729e3c1a132e97db76546
 
 # Radio
-bin/diag_mdlog
-bin/diag_uart_log
-bin/netmgrd
-bin/ftm_ptt
-bin/ptt_socket_app
-bin/port-bridge
-bin/qmuxd
-bin/radish
-bin/rmt_storage
-bin/wlandutservice
+bin/diag_mdlog:vendor/bin/diag_mdlog
+bin/diag_uart_log:vendor/bin/diag_uart_log
+bin/netmgrd:vendor/bin/netmgrd
+bin/ftm_ptt:vendor/bin/ftm_ptt
+bin/ptt_socket_app:vendor/bin/ptt_socket_app
+bin/port-bridge:vendor/bin/port-bridge
+bin/radish:vendor/bin/radish
+bin/wlandutservice:vendor/bin/wlandutservice
+lib/libwcnftms.so:vendor/lib/libwcnftms.so
 etc/plmn_delta.bin
 etc/plmn_se13.bin
 etc/srm.bin
-lib/libatparser.so
-lib/libcordon.so
-lib/libfactoryutil.so
-lib/libomission_avoidance.so
+lib/libatparser.so:vendor/lib/libatparser.so
+lib/libcordon.so:vendor/lib/libcordon.so
+lib/libfactoryutil.so:vendor/lib/libfactoryutil.so
+lib/libomission_avoidance.so:vendor/lib/libomission_avoidance.so
 vendor/lib/libconfigdb.so
 vendor/lib/libmdmdetect.so
-vendor/lib/libnetmgr.so
-vendor/lib/libperipheral_client.so
 vendor/lib/libsubsystem_control.so
 vendor/lib/libSubSystemShutdown.so
 vendor/lib/libxml.so
 
 # RIL
-lib/libaudio-ril.so
-lib/libsecril-client.so
-vendor/lib/libril-qcril-hook-oem.so
+lib/libaudio-ril.so:vendor/lib/libaudio-ril.so
 
 # Samsung libs
 lib/libsecnativefeature.so
