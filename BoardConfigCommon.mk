@@ -213,8 +213,6 @@ TARGET_LD_SHIM_LIBS := \
     /system/vendor/lib/libqomx_jpegenc.so|libboringssl-compat.so \
     /system/vendor/lib/hw/android.hardware.bluetooth@1.0-impl-qti.so|libbase_shim.so \
     /system/vendor/lib/libgeofence.so|liblocadapterbase_shim.so \
-    /system/lib/libsec-ril.so|/vendor/lib/libcutils_shim.so \
-    /system/lib/libsec-ril-dsds.so|/vendor/lib/libcutils_shim.so
     
 # Radio manifest
 DEVICE_MANIFEST_FILE += $(COMMON_PATH)/treble-manifest.xml
