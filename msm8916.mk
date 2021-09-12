@@ -285,11 +285,10 @@ include $(LOCAL_PATH)/prop.mk
 
 # Radio
 PRODUCT_PACKAGES += \
-    librmnetctl \
     libshim_secril \
-    libshim_ril \
     libxml2 \
-    macloader
+    macloader \
+    libcutils_shim
 
 # Rootdir
 PRODUCT_PACKAGES += \
