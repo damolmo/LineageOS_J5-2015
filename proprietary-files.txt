@@ -195,6 +195,7 @@ bin/netmgrd:vendor/bin/netmgrd
 bin/ftm_ptt:vendor/bin/ftm_ptt
 bin/ptt_socket_app:vendor/bin/ptt_socket_app
 bin/port-bridge:vendor/bin/port-bridge
+bin/rmt_storage:vendor/bin/rmt_storage
 bin/radish:vendor/bin/radish
 bin/perfd:vendor/bin/perfd
 bin/wlandutservice:vendor/bin/wlandutservice
