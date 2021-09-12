@@ -120,6 +120,12 @@ on boot
     chmod 2770 /dev/socket/qmux_bluetooth
     mkdir /dev/socket/qmux_gps 0770 gps gps
     chmod 2770 /dev/socket/qmux_gps
+    chmod 660 /dev/socket/qmux_gps/qmux_client_socket
+    chmod 660 /dev/socket/qmux_gps/qmux_connect_socket
+    
+    # Allow QMUX daemon to assign port open wait time
+    chown radio radio /sys/devices/virtual/hsicctl/hsicctl0/modem_wait
+    chmod 666 /sys/devices/virtual/hsicctl/hsicctl0/modem_wait
 
     mkdir /persist/drm 0770 system system
     mkdir /persist/misc 0770 system system
@@ -564,6 +570,33 @@ on post-fs-data
     write /data/misc/radio/db_check_done 0
     chown radio radio /data/misc/radio/db_check_done
     chmod 0660 /data/misc/radio/db_check_done
+    
+    chown system radio /sys/devices/platform/mdm_hsic_pm0/waketime
+    chmod 0666 /sys/devices/platform/mdm_hsic_pm0/waketime
+    chown radio radio /sys/class/sec/switch/uart_sel
+    chown radio radio /sys/power/wake_lock
+    chown radio radio /sys/power/wake_unlock
+    chown radio radio /sys/devices/virtual/smdpkt/smdcntl0/open_timeout
+    chown radio radio /sys/module/f_rmnet/parameters/rmnet_ctl_ch
+    chown radio radio /sys/module/rmnet/parameters/rmnet_ctl_ch
+    chown radio radio /sys/class/sec/slot_switch/slot_sel
+    chown radio radio /sys/block/mmcblk0/device/name
+    chown radio radio /sys/block/mmcblk0/device/cid
+    chown radio radio /sys/module/rmnet_usb/parameters/dump_ctrl_msg
+    chown radio radio /sys/class/sec/sec_key/hall_irq_ctrl
+    chown radio radio /sys/devices/virtual/misc/multipdp/waketime
+    chmod 0660 /sys/power/wake_unlock
+    chmod 0660 /sys/class/sec/switch/uart_sel
+    chmod 0660 /sys/block/mmcblk0/device/name
+    chmod 0660 /sys/block/mmcblk0/device/cid
+    chmod 0660 /sys/power/wake_lock
+    chmod 0660 /sys/devices/virtual/smdpkt/smdcntl0/open_timeout
+    chmod 0660 /sys/module/f_rmnet/parameters/rmnet_ctl_ch
+    chmod 0660 /sys/module/rmnet/parameters/rmnet_ctl_ch
+    chmod 0660 /sys/class/sec/slot_switch/slot_sel
+    chmod 0660 /sys/module/rmnet_usb/parameters/dump_ctrl_msg
+    chmod 0660 /sys/class/sec/sec_key/hall_irq_ctrl
+    chmod 0660 /sys/devices/virtual/misc/multipdp/waketime
 
     # link  the telephony database
     start vendor.link_ril_db
