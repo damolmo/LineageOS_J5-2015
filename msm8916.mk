@@ -286,6 +286,7 @@ include $(LOCAL_PATH)/prop.mk
 # Radio
 PRODUCT_PACKAGES += \
     libshim_secril \
+    libshim_ril \
     libxml2 \
     macloader \
     libcutils_shim
