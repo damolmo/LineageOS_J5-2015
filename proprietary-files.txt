@@ -212,6 +212,7 @@ vendor/lib/libsubsystem_control.so
 vendor/lib/libSubSystemShutdown.so
 vendor/lib/libxml.so
 vendor/lib/libqti-perfd-client.so:vendor/lib/libqti-perfd-client.so
+vendor/lib/libqti-at.so:vendor/lib/libqti-at.so
 
 # RIL
 lib/libaudio-ril.so:vendor/lib/libaudio-ril.so
