@@ -1,7 +1,5 @@
 #============= rild ==============
 allow rild alarm_device:chr_file { ioctl open read };
-allow rild imei_efs_file:dir search;
-allow rild imei_efs_file:file r_file_perms;
 allow rild default_prop:property_service set;
 allow rild net_radio_prop:property_service set;
 allow rild proc_net:file write;
