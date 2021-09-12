@@ -7,9 +7,6 @@
 /(vendor|system/vendor)/bin/hw/android\.hardware\.drm@1\.3-service\.clearkey                u:object_r:hal_drm_clearkey_exec:s0
 /data/vendor/mediadrm(/.*)?                                 u:object_r:media_data_file:s0
 
-# EFS
-/efs/imei(/.*)?                                      u:object_r:imei_efs_file:s0
-
 # Camera
 /sys/devices/virtual/camera(/.*)?                           u:object_r:sysfs_camera:s0
 /sys/devices/w1_bus_master1(/.*)?                           u:object_r:sysfs_graphics:s0
