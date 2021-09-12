@@ -805,6 +805,12 @@ service vendor.qcom-post-boot /vendor/bin/init.qcom.post_boot.sh
     user root
     disabled
     oneshot
+    
+service ipacm /system/bin/ipacm
+    class main
+    user net_admin
+    group net_admin inet
+    writepid /dev/cpuset/system-background/tasks
 
 on property:sys.boot_completed=1
     start vendor.qcom-post-boot
