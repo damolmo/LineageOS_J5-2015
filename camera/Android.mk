@@ -1,29 +1,57 @@
-ifeq ($(TARGET_PROVIDES_CAMERA_HAL),true)
-LOCAL_PATH := $(call my-dir)
-include $(CLEAR_VARS)
+//
+// Copyright (C) 2014 The CyanogenMod Project
+// Copyright (C) 2021 The LineageOS Project
+//
+// Licensed under the Apache License, Version 2.0 (the "License");
+// you may not use this file except in compliance with the License.
+// You may obtain a copy of the License at
+//
+//      http://www.apache.org/licenses/LICENSE-2.0
+//
+// Unless required by applicable law or agreed to in writing, software
+// distributed under the License is distributed on an "AS IS" BASIS,
+// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+// See the License for the specific language governing permissions and
+// limitations under the License.
 
-LOCAL_C_INCLUDES := \
-    system/media/camera/include
+cc_library_shared {
+    name: "camera.msm8916",
+    relative_install_path: "hw",
 
-LOCAL_SRC_FILES := \
-    CameraWrapper.cpp
+    include_dirs: [
+        "system/media/camera/include",
+    ],
 
-LOCAL_HEADER_LIBRARIES += \
-    libnativebase_headers \
-    libnativewindow_headers
+    srcs: ["CameraWrapper.cpp"],
 
-LOCAL_STATIC_LIBRARIES := libbase libarect
-LOCAL_SHARED_LIBRARIES := \
-    libhardware liblog libcamera_client libutils libcutils libdl \
-    android.hidl.token@1.0-utils \
-    android.hardware.graphics.bufferqueue@1.0 \
-    android.hardware.graphics.bufferqueue@2.0
+    shared_libs: [
+        "libcamera_client",
+        "liblog",
+        "libutils",
+        // additional libs for original camera HAL
+        "libboringssl-compat",
+        "libhardware",
+        "libcutils",
+        "libdl",
+        "android.hidl.token@1.0-utils",
+        "android.hardware.graphics.bufferqueue@1.0",
+        "android.hardware.graphics.bufferqueue@2.0",
+    ],
 
-LOCAL_MODULE_PATH := $(TARGET_OUT_VENDOR_SHARED_LIBRARIES)/hw
-LOCAL_MODULE := camera.$(TARGET_BOARD_PLATFORM)
-LOCAL_MODULE_TAGS := optional
-LOCAL_PROPRIETARY_MODULE := true
+    static_libs: [
+        // additional libs for original camera HAL
+        "libbase",
+        "libarect",
+    ],
 
-include $(BUILD_SHARED_LIBRARY)
+    cflags: [
+        "-Wall",
+        "-Wextra",
+        "-Werror",
+        "-Wno-unused-const-variable",
+        "-Wno-unused-parameter",
+        "-fvisibility=hidden",
+    ],
 
-endif
+    vendor: true,
+}
