@@ -2,7 +2,7 @@
 
 <img src="https://github.com/daviiid99/LineageOS_J5-2015/blob/Home/logo.png">
 
-This is a repo for my UNOFFICIAL LineageOS builds for the Samsung J5 (2015) 
+> This is a repo for my UNOFFICIAL LineageOS builds for the Samsung J5 (2015) 
 
 # LineageOS 18.1 Status
 
