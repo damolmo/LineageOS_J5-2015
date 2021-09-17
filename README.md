@@ -42,35 +42,6 @@ git clone -b samsung_qcom-caf_media https://github.com/daviiid99/LineageOS_J5-20
 cd ../../../
 ```
  <br/>
-
-(Optional) LineageOS Updater app shorcut in drawer
-```
-mkdir -p out/target/product/j5nlte/system/product/priv-app
-cd out/target/product/j5nlte/system/product/priv-app
-mkdir Up&& cd Up
-wget https://github.com/daviiid99/daviiid99/releases/download/honami/Up.apk
-cd ../../../../../../../../
-```
- <br/>
- 
- 
- (Optional) Gcam Go app prebuilt apk
-```
-cd out/target/product/j5nlte/system/product/priv-app
-mkdir Gcam&& cd Gcam
-wget https://github.com/daviiid99/daviiid99/releases/download/honami/Gcam.apk
-cd ../../../../../../../../
-```
- <br/>
- 
-  (Optional) Lawnchair app prebuilt apk
-```
-cd out/target/product/j5nlte/system/product/priv-app
-mkdir lawnchair&& cd lawnchair
-wget https://github.com/daviiid99/daviiid99/releases/download/honami/lawnchair.apk
-cd ../../../../../../../../
-```
- <br/>
  
 (Optional) Replace Default Wallpaper
 ```
