@@ -63,6 +63,15 @@ cd ../../../../../../../../
 ```
  <br/>
  
+  (Optional) Lawnchair app prebuilt apk
+```
+cd out/target/product/j5nlte/system/product/priv-app
+mkdir lawnchair&& cd lawnchair
+wget https://github.com/daviiid99/daviiid99/releases/download/honami/lawnchair.apk
+cd ../../../../../../../../
+```
+ <br/>
+ 
 (Optional) Replace Default Wallpaper
 ```
 cd vendor/lineage/overlay/common/frameworks/base/core/res/res/drawable-hdpi
