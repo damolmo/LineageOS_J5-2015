@@ -35,9 +35,10 @@ patch -d frameworks/base -p1 < RPatches/Disable_Wallpaper_Zoom.patch #Fixes Andr
  
  Add patched repos:
 ```
-cd hardware/qcom-caf/msm8916 && rm -rf media && rm -rf display
+cd hardware/qcom-caf/msm8916 && rm -rf media && rm -rf display && rm -rf build
 git clone -b samsung_qcom-caf_display https://github.com/daviiid99/LineageOS_J5-2015 display
 git clone -b samsung_qcom-caf_media https://github.com/daviiid99/LineageOS_J5-2015 media
+git clone -b lineage_build https://github.com/daviiid99/LineageOS_J5-2015 build
 cd ../../../
 ```
  <br/>
@@ -48,6 +49,16 @@ mkdir -p out/target/product/j5nlte/system/product/priv-app
 cd out/target/product/j5nlte/system/product/priv-app
 mkdir Up&& cd Up
 wget https://github.com/daviiid99/daviiid99/releases/download/honami/Up.apk
+cd ../../../../../../../../
+```
+ <br/>
+ 
+ 
+ (Optional) Gcam Go app prebuilt apk
+```
+cd out/target/product/j5nlte/system/product/priv-app
+mkdir Gcam&& cd Gcam
+wget https://github.com/daviiid99/daviiid99/releases/download/honami/Gcam.apk
 cd ../../../../../../../../
 ```
  <br/>
