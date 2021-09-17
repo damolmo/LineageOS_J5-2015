@@ -91,8 +91,7 @@ PRODUCT_PACKAGES += \
     camera.device@1.0-impl \
     libcamera_shim \
     libmm-qcamera \
-    camera.msm8916 \
-    Snap
+    camera.msm8916 
 
 DEVICE_MANIFEST_FILE += device/samsung/msm8916-common/treble-manifest-camera.xml
 
