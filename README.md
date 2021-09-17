@@ -1,8 +1,29 @@
 # LineageOS 18.1 Builds for  Samsung Galaxy J5 (2015)
 
-<img src="https://github.com/daviiid99/LineageOS_J5-2015/blob/main/logo.png">
+<img src="https://github.com/daviiid99/LineageOS_J5-2015/blob/Home/logo.png">
 
 This is a repo for my UNOFFICIAL LineageOS builds for the Samsung J5 (2015) 
+
+# LineageOS 18.1 Status
+
+| Hardware/Service        | Working                    | Not Working           |
+| :---------------------- |:----------------------     |:----------------------|
+|    Wi-Fi                |   ✓                        |                       |
+|    RIL  (includes mobile-data, calls,...)                 |   ✓                        |                       |
+|   Bluetooth (includes audio input)   |   ✓                        |                       |
+|    Sensors (proximity & accelerometer)|   ✓                        |                       |
+|    GPS                |   ✓                        |                       |
+|    NFC                |   ✓                        |                       |
+|    DRM (ClearKey 1.3)|   ✓                        |                       |
+|    Widevine (v15.0.0) (L3)|   ✓                        |                       |
+|    Camera (Photos, video recording) |   ✓                        |                       |
+|    Torch                |   ✓                        |                       |
+|    Screen ( Touch, Rotation, LiveDisplay) |   ✓                        |                       |
+|    FM Radio                |   ✓                        |                       |
+|    Miracast                |   ✓                        |                       |
+|    Hotspot                |                           |   ✗                    |
+|    VoLTE                |                         |      ✗                 |
+
 
 # Supported Devices
 | Model                   | Codename                   | Builds
