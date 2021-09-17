@@ -41,51 +41,6 @@ git clone -b samsung_qcom-caf_display https://github.com/daviiid99/LineageOS_J5-
 git clone -b samsung_qcom-caf_media https://github.com/daviiid99/LineageOS_J5-2015 media
 cd ../../../
 ```
- <br/>
- 
-(Optional) Replace Default Wallpaper
-```
-cd vendor/lineage/overlay/common/frameworks/base/core/res/res/drawable-hdpi
-rm default_wallpaper.png
-wget https://github.com/daviiid99/daviiid99/releases/download/honami/default_wallpaper.png
-cd ../
-
-cd drawable-nodpi
-rm default_wallpaper.png
-wget https://github.com/daviiid99/daviiid99/releases/download/honami/default_wallpaper.png
-cd ../
-
-cd drawable-sw600dp-nodpi
-rm default_wallpaper.png
-wget https://github.com/daviiid99/daviiid99/releases/download/honami/default_wallpaper.png
-cd ../
-
-cd drawable-sw720dp-nodpi
-rm default_wallpaper.png
-wget https://github.com/daviiid99/daviiid99/releases/download/honami/default_wallpaper.png
-cd ../
-
-cd drawable-xhdpi
-rm default_wallpaper.png
-wget https://github.com/daviiid99/daviiid99/releases/download/honami/default_wallpaper.png
-cd ../
-
-cd drawable-xxhdpi
-rm default_wallpaper.png
-wget https://github.com/daviiid99/daviiid99/releases/download/honami/default_wallpaper.png
-cd ../
-
-cd drawable-xxhdpi
-rm default_wallpaper.png
-wget https://github.com/daviiid99/daviiid99/releases/download/honami/default_wallpaper.png
-cd ../
-
-cd drawable-xxxhdpi
-rm default_wallpaper.png
-wget https://github.com/daviiid99/daviiid99/releases/download/honami/default_wallpaper.png
-cd ../../../../../../../../../../
-```
-
 <br/>
 
 (Optional) OpenGApps configure source
