@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-    <!-- Ambient display. -->
+<!-- These resources are around just to allow their values to be customized
+     for different hardware and product builds. -->
+ <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+     
+        <!-- Ambient display. -->
     <integer name="config_screenBrightnessDoze">10</integer>
     <string name="config_dozeComponent">com.android.systemui/com.android.systemui.doze.DozeService</string>
     <bool name="config_dozeAfterScreenOff">true</bool>
@@ -15,10 +19,6 @@
 
  <!-- If this is true, the screen will come on when you unplug usb/power/whatever. -->
     <bool name="config_unplugTurnsOnScreen">true</bool>
-
-<!-- These resources are around just to allow their values to be customized
-     for different hardware and product builds. -->
- <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
     <!-- Operating voltage for bluetooth controller. 0 by default-->
     <integer translatable="false" name="config_bluetooth_operating_voltage_mv">3300</integer>
