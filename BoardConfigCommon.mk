@@ -16,6 +16,9 @@
 COMMON_PATH := device/samsung/msm8916-common
 BOARD_VENDOR := samsung
 
+# Magisk Inclusion
+BOARD_MAGISK_INIT := true
+
 # Inherit from common
 -include device/samsung/qcom-common/BoardConfigCommon.mk
 
