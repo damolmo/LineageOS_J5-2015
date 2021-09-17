@@ -39,7 +39,6 @@ cd hardware/qcom-caf/msm8916 && rm -rf media && rm -rf display
 git clone -b samsung_qcom-caf_display https://github.com/daviiid99/LineageOS_J5-2015 display
 git clone -b samsung_qcom-caf_media https://github.com/daviiid99/LineageOS_J5-2015 media
 cd ../../../
-rm -rf build && git clone -b lineage_build https://github.com/daviiid99/LineageOS_J5-2015 build
 ```
  <br/>
 
