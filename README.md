@@ -29,8 +29,8 @@ source build/envsetup.sh
 
 Apply patches:
 ```
-patch -d frameworks/base -p1 < RPatches/Disable_Wallpaper_Zoom.patch #Fixes Android R Wallpaper Zoom
-patch -d build -p1 < RPatches/0001-Magisk-support.patch 
+patch -d frameworks/base -p1 < RPatches/0002-Disable_Wallpaper_Zoom.patch #Fixes Android R Wallpaper Zoom
+patch -d build -p1 < RPatches/0001-Magisk-support.patch # Patches build process to include Magisk support
  ```
  <br/>
  
