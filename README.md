@@ -36,7 +36,7 @@ OpenGApps configure source
 sudo apt install git-lfs
 git lfs install
 repo forall -c git lfs pull
-rm modules/TrichromeLibrary/Android.mk # This is actually needed for Chrome arm
+rm ~/android/lineage/vendor/opengapps/build/modules/TrichromeLibrary/Android.mk # This is actually needed for Chrome arm
 ```
 <br/>
 
