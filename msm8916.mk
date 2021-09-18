@@ -93,7 +93,7 @@ PRODUCT_PACKAGES += \
     libmm-qcamera \
     camera.msm8916 
 
-DEVICE_MANIFEST_FILE += device/samsung/msm8916-common/treble-manifest-camera.xml
+DEVICE_MANIFEST_FILE += device/samsung/msm8916-common/Manifest/treble-manifest-camera.xml
 
 # Connectivity Engine support
 PRODUCT_PACKAGES += \
@@ -342,7 +342,7 @@ PRODUCT_PACKAGES += \
     android.hardware.sensors@1.0-service \
     sensors.msm8916
 
-DEVICE_MANIFEST_FILE += device/samsung/msm8916-common/treble-manifest-sensors.xml
+DEVICE_MANIFEST_FILE += device/samsung/msm8916-common/Manifest/treble-manifest-sensors.xml
     
  # Thermal
 PRODUCT_PACKAGES += \
@@ -351,7 +351,7 @@ PRODUCT_PACKAGES += \
     thermal.msm8916
     
    # Radio
-   DEVICE_MANIFEST_FILE += device/samsung/msm8916-common/treble-manifest-radio.xml
+   DEVICE_MANIFEST_FILE += device/samsung/msm8916-common/Manifest/treble-manifest-radio.xml
  
 # NFC
 PRODUCT_PACKAGES += \
@@ -381,7 +381,7 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/com.android.nfc_extras.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/com.android.nfc_extras.xml \
     frameworks/native/data/etc/com.nxp.mifare.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/com.nxp.mifare.xml
 
-DEVICE_MANIFEST_FILE += $(COMMON_PATH)/treble-manifest-nfc.xml
+DEVICE_MANIFEST_FILE += $(COMMON_PATH)/Manifest/treble-manifest-nfc.xml
    
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
