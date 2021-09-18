@@ -429,3 +429,7 @@ PRODUCT_PACKAGES += \
     wcnss_service \
     wificond \
     wpa_supplicant
+    
+# Remove unwanted packages
+PRODUCT_PACKAGES += \
+    RemovePackages
