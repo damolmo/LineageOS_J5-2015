@@ -27,7 +27,7 @@ source build/envsetup.sh
 ```
 <br/>
 
-(Optional) OpenGApps configure source
+OpenGApps configure source
 ```
 sudo apt install git-lfs
 git lfs install
