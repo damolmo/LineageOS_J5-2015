@@ -8,7 +8,7 @@ Initialize LineageOS repo:
 ```
 mkdir -p ~/android/lineage
 cd ~/android/lineage
-repo init -u git://github.com/LineageOS/android.git -b lineage-18.1
+repo init https://github.com/daviiid99/sept.git -b android
 ```
 <br/>
 
@@ -24,15 +24,6 @@ Sync repo:
 ```
 repo sync
 source build/envsetup.sh
-```
-<br/>
- 
- Add patched repos:
-```
-cd hardware/qcom-caf/msm8916 && rm -rf media && rm -rf display
-git clone -b samsung_qcom-caf_display https://github.com/daviiid99/LineageOS_J5-2015 display
-git clone -b samsung_qcom-caf_media https://github.com/daviiid99/LineageOS_J5-2015 media
-cd ../../../
 ```
 <br/>
 
