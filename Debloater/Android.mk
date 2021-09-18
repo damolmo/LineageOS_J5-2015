@@ -4,16 +4,7 @@ include $(CLEAR_VARS)
 LOCAL_MODULE := RemovePackages
 LOCAL_MODULE_CLASS := APPS
 LOCAL_MODULE_TAGS := optional
-LOCAL_OVERRIDES_PACKAGES := \ 
-Camera2 \
-Jelly \
-Calculator2 \
-Messaging \
-Etar \
-Contacts \
-Recorder \
-Gallery2 \
-Eleven  
+LOCAL_OVERRIDES_PACKAGES := Camera2 
 LOCAL_UNINSTALLABLE_MODULE := true
 LOCAL_CERTIFICATE := PRESIGNED
 LOCAL_SRC_FILES := /dev/null
