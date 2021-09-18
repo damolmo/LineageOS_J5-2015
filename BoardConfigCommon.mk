@@ -218,14 +218,14 @@ TARGET_LD_SHIM_LIBS := \
     /system/vendor/lib/libgeofence.so|liblocadapterbase_shim.so \
     
 # Radio manifest
-DEVICE_MANIFEST_FILE += $(COMMON_PATH)/treble-manifest.xml
+DEVICE_MANIFEST_FILE += $(COMMON_PATH)/Manifest/treble-manifest.xml
 PRODUCT_ENFORCE_VINTF_MANIFEST_OVERRIDE := true
 
 # Bluetooth manifest
-DEVICE_MANIFEST_FILE += device/samsung/msm8916-common/treble-manifest-bluetooth.xml
+DEVICE_MANIFEST_FILE += device/samsung/msm8916-common/Manifest/treble-manifest-bluetooth.xml
 
 # DRM manifest
-DEVICE_MANIFEST_FILE += device/samsung/msm8916-common/treble-manifest-drm.xml
+DEVICE_MANIFEST_FILE += device/samsung/msm8916-common/Manifest/treble-manifest-drm.xml
 
 # Time services
 BOARD_USES_QC_TIME_SERVICES := true
