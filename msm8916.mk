@@ -432,12 +432,4 @@ PRODUCT_PACKAGES += \
     
 # Remove unwanted packages
 PRODUCT_PACKAGES += \
-    RemoveCamera2 \
-    RemoveJely \
-    RemoveCalculator2 \
-    RemoveMessaging \
-    RemoveEtar \
-    RemoveContacts \
-    RemoveRecorder \
-    RemoveGallery2 \
-    RemoveEleven
+RemovePackages
