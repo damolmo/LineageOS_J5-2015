@@ -1,7 +1,11 @@
-# SAMSUNG Galaxy J5 | Manifest
+# SAMSUNG Galaxy J5 | Build Instructions with Manifest
 <br/>
 
-## Build Instructions with manifest
+## Set up Linux environment
+```
+wget https://github.com/daviiid99/LineageOS_J5-2015/blob/Manifest/environment.sh 
+sh ./environment.sh
+```
 <br/>
 
 Initialize LineageOS repo:
