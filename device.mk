@@ -5,7 +5,7 @@ PRODUCT_RELEASE_NAME := Samsung Galaxy J5
 $(call inherit-product, vendor/samsung/j5-common/j5-common-vendor.mk)
 
 # Inherit some common Lineage stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+$(call inherit-product, vendor/lineage/config/common_full_go_phone.mk)
 
 # Include full languages
 $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
