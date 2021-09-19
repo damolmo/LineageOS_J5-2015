@@ -1,6 +1,7 @@
 subdirs = [
     "light",
     "camera",
+    "init",
 ]
 
 soong_namespace {
