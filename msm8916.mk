@@ -442,6 +442,7 @@ PRODUCT_PACKAGES += \
     RemoveContacts \
     RemoveRecorder \
     RemoveGallery2 \
+    RemoveTrebuchet \
     RemoveEleven
 
 # Use a profile based boot image for this device. Note that this is currently a
