@@ -9,7 +9,7 @@
 | <img src="https://github.com/daviiid99/LineageOS_J5-2015/blob/Home/Resources/home.png">                        | <img src="https://github.com/daviiid99/LineageOS_J5-2015/blob/Home/Resources/drawer.png">                           | <img src="https://github.com/daviiid99/LineageOS_J5-2015/blob/Home/Resources/build_info.png">                      |
 <br/>
 
-# LineageOS 18.1 Status
+# ROM Status
 
 | Hardware/Service        | Working                    | Not Working           |
 | :---------------------- |:----------------------     |:----------------------|
@@ -30,7 +30,7 @@
 |    VoLTE                |                         |      ✗                 |
 <br/>
 
-# Supported Devices
+# ROM Downloads
 | Model                   | Codename                   | Builds
 | :---------------------- |:----------------------     |:----------------------|
 |SAMSUNG Galaxy J5 SM-J500FN |j5nlte| <a href="https://github.com/daviiid99/LineageOS_J5-2015/releases/tag/j5nlte_20210919">20210919</a><br/> <a href="https://github.com/daviiid99/LineageOS_J5-2015/releases/tag/j5nlte_20210918">20210918</a><br/> <a href="https://github.com/daviiid99/LineageOS_J5-2015/releases/tag/j5nlte_20210915">20210915</a><br/> <a href="https://github.com/daviiid99/LineageOS_J5-2015/releases/tag/j5nlte_20210913">20210913</a><br/> <a href="https://github.com/daviiid99/LineageOS_J5-2015/releases/tag/j5nlte_20210910">20210910</a><br/> <a href="https://github.com/daviiid99/LineageOS_J5-2015/releases/tag/j5nlte_20210908">20210908</a><br/> <a href="https://github.com/daviiid99/LineageOS_J5-2015/releases/tag/j5nlte_20210830">20210830</a><br/> <a href="https://github.com/daviiid99/LineageOS_J5-2015/releases/tag/j5nlte_20210827">20210827</a><br/> <a href="https://github.com/daviiid99/LineageOS_J5-2015/releases/tag/j5nlte_20210826">20210826</a>|
