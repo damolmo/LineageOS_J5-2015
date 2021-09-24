@@ -1,3 +1,3 @@
 #============= zygote ==============
 allow zygote proc_cmdline:file { getattr open read };
-get_prop(zygote, bluetooth_prop);
+get_prop(zygote, bluetooth_prop, exported_camera_prop );
