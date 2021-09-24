@@ -1,3 +1,1 @@
-#============= bootanim ==============
-allow bootanim sysfs_kgsl_gpuclk:file { getattr open read };
-
+get_prop(bootanim, userspace_reboot_exported_prop);
