@@ -229,6 +229,9 @@ DEVICE_MANIFEST_FILE += device/samsung/msm8916-common/Manifest/treble-manifest-d
 # Time services
 BOARD_USES_QC_TIME_SERVICES := true
 
+# Build fingerprint
+BUILD_FINGERPRINT := "samsung/j5nltexx/j5nlte:6.0.1/MMB29M/J500FNXXS1BQG1:user/release-keys"
+
 # Wifi
 BOARD_HAS_QCOM_WLAN := true
 BOARD_HOSTAPD_DRIVER := NL80211
