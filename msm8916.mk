@@ -359,6 +359,9 @@ PRODUCT_PACKAGES += \
    
    # Light
    DEVICE_MANIFEST_FILE += device/samsung/msm8916-common/Manifest/treble-manifest-light.xml
+   
+   # Livedisplay
+   DEVICE_MANIFEST_FILE += device/samsung/msm8916-common/Manifest/treble-manifest-livedisplay.xml
  
 # NFC
 PRODUCT_PACKAGES += \
