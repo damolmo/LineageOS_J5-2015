@@ -2,4 +2,5 @@
 allow rmt_storage block_device:blk_file { open read write };
 allow rmt_storage debugfs:file { open write };
 allow rmt_storage self:capability { net_raw sys_admin };
+allow rmt_storage self:capability dac_override;
 
