@@ -356,6 +356,9 @@ PRODUCT_PACKAGES += \
     
    # Radio
    DEVICE_MANIFEST_FILE += device/samsung/msm8916-common/Manifest/treble-manifest-radio.xml
+   
+   # Light
+   DEVICE_MANIFEST_FILE += device/samsung/msm8916-common/Manifest/treble-manifest-light.xml
  
 # NFC
 PRODUCT_PACKAGES += \
