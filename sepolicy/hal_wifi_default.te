@@ -1,4 +1,5 @@
 #============= hal_wifi_default ==============
 allow hal_wifi_default default_prop:property_service set;
 allow hal_wifi_default proc_net:file write;
+get_prop(hal_wifi_default, vendor_wifi_prop)
 
