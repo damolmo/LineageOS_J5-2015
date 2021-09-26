@@ -231,10 +231,8 @@ DEVICE_MANIFEST_FILE += device/samsung/msm8916-common/Manifest/treble-manifest-d
 BOARD_USES_QC_TIME_SERVICES := true
 
 # Build fingerprint
-
-PRODUCT_BUILD_PROP_OVERRIDES += \
-    BUILD_FINGERPRINT := "samsung/j5nltexx/j5nlte:6.0.1/MMB29M/J500FNXXS1BQG1:user/release-keys"
-    PRIVATE_BUILD_DESC := "j5nltexx-user 6.0.1 MMB29M J500FNXXS1BQG1 release-keys"
+BUILD_FINGERPRINT := "samsung/j5nltexx/j5nlte:6.0.1/MMB29M/J500FNXXS1BQG1:user/release-keys"
+PRIVATE_BUILD_DESC := "j5nltexx-user 6.0.1 MMB29M J500FNXXS1BQG1 release-keys"
 
 # Wifi
 BOARD_HAS_QCOM_WLAN := true
