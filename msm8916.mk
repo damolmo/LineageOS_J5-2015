@@ -280,6 +280,8 @@ PRODUCT_COPY_FILES += \
 # Power HAL
 PRODUCT_PACKAGES += \
     android.hardware.power-service-qti
+    
+DEVICE_MANIFEST_FILE += device/samsung/msm8916-common/Manifest/treble-manifest-power.xml
 
 # Properties
 include $(LOCAL_PATH)/prop.mk
