@@ -128,7 +128,8 @@ BOARD_KERNEL_CMDLINE += \
 	user_debug=23 \
 	msm_rtb.filter=0x3F \
 	ehci-hcd.park=3 \
-	androidboot.bootdevice=7824900.sdhci 
+	androidboot.bootdevice=7824900.sdhci \
+	androidboot.selinux=permissive 
 	
 BOARD_CUSTOM_BOOTIMG := true
 BOARD_CUSTOM_BOOTIMG_MK := hardware/samsung/mkbootimg.mk
@@ -232,9 +233,8 @@ BOARD_USES_QC_TIME_SERVICES := true
 # Build fingerprint
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRODUCT_NAME=j5nltexx \
     BUILD_FINGERPRINT := "samsung/j5nltexx/j5nlte:6.0.1/MMB29M/J500FNXXS1BQG1:user/release-keys"
-    PRIVATE_BUILD_DESC="j5nltexx-user 6.0.1 MMB29M J500FNXXS1BQG1 release-keys"
+    PRIVATE_BUILD_DESC := "j5nltexx-user 6.0.1 MMB29M J500FNXXS1BQG1 release-keys"
 
 # Wifi
 BOARD_HAS_QCOM_WLAN := true
