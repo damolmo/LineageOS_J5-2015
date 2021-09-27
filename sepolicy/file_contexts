@@ -14,6 +14,9 @@
 # Camera
 /sys/devices/virtual/camera(/.*)?                           u:object_r:sysfs_camera:s0
 
+# Bluetooth
+/(vendor|system/vendor)/bin/hw/android\.hardware\.bluetooth@1\.0-service.msm8916             u:object_r:hal_bluetooth_default_exec:s0
+
 # Lights
 /sys/class/leds(/.*)? u:object_r:sysfs_leds:s0
 /(vendor|system/vendor)/bin/hw/android\.hardware\.light@2\.0-service.msm8916 u:object_r:hal_light_default_exec:s0
