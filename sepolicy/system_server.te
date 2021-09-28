@@ -15,3 +15,6 @@ get_prop(system_server, userspace_reboot_config_prop);
 
 #Camera
 get_prop(system_server, exported_camera_prop);
+
+#Bluetooth
+get_prop(system_server, bluetooth_prop)
