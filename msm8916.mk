@@ -353,7 +353,8 @@ PRODUCT_PACKAGES += \
     android.hardware.thermal@1.0-impl \
     android.hardware.thermal@1.0-service \
     thermal.msm8916
-    
+   DEVICE_MANIFEST_FILE += device/samsung/msm8916-common/Manifest/treble-manifest-thermal.xml
+      
    # Radio
    DEVICE_MANIFEST_FILE += device/samsung/msm8916-common/Manifest/treble-manifest-radio.xml
    
