@@ -1,6 +1,5 @@
 <manifest version="1.0" type="device">
-</hal>
-	<hal format="hidl">
+<hal format="hidl">
         <name>android.hardware.thermal</name>
         <transport>hwbinder</transport>
         <version>1.0</version>
