@@ -1,0 +1,1 @@
+allow hal_bluetooth_default efs_file:dir search;
