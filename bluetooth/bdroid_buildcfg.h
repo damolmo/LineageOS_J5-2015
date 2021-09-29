@@ -17,6 +17,28 @@
 #ifndef _BDROID_BUILDCFG_H
 #define _BDROID_BUILDCFG_H
 
+
+
+inline const char* BtmGetDefaultName()
+{
+	char device[92];
+	property_get("ro.boot.device", device, "");
+
+	if (!strcmp("j5nlte", device)) {
+		return "Samsung Galaxy SM-J500FN";
+	} else if (!strcmp("j53gxx", device)) {
+		return "Samsung Galaxy J5 SM-J500H";
+	} else if (!strcmp("j5ltechn", device)) {
+		return "Samsung Galaxy J5 SM-J5008";
+	} else if (!strcmp("j5lte", device)) {
+		return "Samsung Galaxy J5 SM-J500F/G/M/NO/Y";
+	}
+
+	return "Samsung Galaxy J5";
+}
+
+#define BTM_DEF_LOCAL_NAME BtmGetDefaultName()
+
 #define BTM_DEF_LOCAL_NAME   "Samsung Galaxy J5"
 #define BLUETOOTH_QTI_SW TRUE
 #define BTC_INCLUDED TRUE
