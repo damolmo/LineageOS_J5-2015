@@ -1,5 +1,6 @@
 #============= vendor_init ==============
 allow vendor_init audio_data_file:dir { create setattr };
+allow vendor_init bluetooth_data_file:dir { setattr };
 allow vendor_init camera_data_file:dir { create setattr };
 allow vendor_init dhcp_data_file:dir { setattr };
 allow vendor_init nfc_data_file:dir { search setattr };
