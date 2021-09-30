@@ -7,9 +7,13 @@
 /dev/alarm u:object_r:alarm_device:s0
 /(vendor|system/vendor)/bin/init\.link_ril_db\.sh u:object_r:qti_init_shell_exec:s0
 
-# DRM
+# Widevine
 /(vendor|system/vendor)/bin/hw/android\.hardware\.drm@1\.2-service\.widevine                u:object_r:hal_drm_widevine_exec:s0
+
+# Clearkey
 /(vendor|system/vendor)/bin/hw/android\.hardware\.drm@1\.3-service\.clearkey                u:object_r:hal_drm_clearkey_exec:s0
+
+# DRM
 /data/vendor/mediadrm(/.*)?                                 u:object_r:media_data_file:s0
 
 # Camera
