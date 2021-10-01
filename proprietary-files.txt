@@ -27,11 +27,16 @@ vendor/lib/libaptXHD_encoder.so|b65cd3b72ae3e6a57901fd5b5383bfa1a88c5737
 vendor/lib/com.qualcomm.qti.ant@1.0_vendor.so|62f59ebce4dd877035de2886b0bc769fbe3f5f44
 
 # Bluetooth
-vendor/lib/hw/android.hardware.bluetooth@1.0-impl-qti.so|dfe077d09d2c89e80429d68c70e6bb80286afb1e
-vendor/lib/hw/vendor.qti.hardware.btconfigstore@1.0-impl.so
-vendor/lib/hw/vendor.qti.hardware.bluetooth_audio@2.0-impl.so
-vendor/lib/com.qualcomm.qti.bluetooth_audio@1.0_vendor.so|c31edee39b8c25fe0fba7efd36267ffded5785c6
--vendor/lib/libbtnv.so|9b6845a4206e1423b9d476fd6e290930ec6d0d4a
+vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti |45986b1685eb84a02832e43937dd504ca4520855
+vendor/etc/init/android.hardware.bluetooth@1.0-service-qti.rc |a979981c55f3dcaf6cf2212e71b901ca4d58b959
+vendor/lib/com.qualcomm.qti.bluetooth_audio@1.0.so |a4292760f507ab39643e23ce2ca004f794134629
+vendor/lib/hw/android.hardware.bluetooth@1.0-impl-qti.so |ce3789bc9d89f590aca10c4fa50644ec9086c0a6
+vendor/lib/hw/vendor.qti.hardware.fm@1.0-impl.so |f683332142f45a3212203f41f58dfe1cf50e4cdd
+vendor/lib/libaptX_encoder.so |dcf8b6804153a296c39660119d50a855f345f2d2
+vendor/lib/libaptXHD_encoder.so  |0f5d5d9d79699a25efbdb1ef83fbf18d45b7a12e
+vendor/lib/libbtnv.so |f2143391527de9b57dcd27c974ea9de452609d04
+vendor/lib/libldacBT_enc.so |214b0865ab38f2c271a4842a26da5e947588ae3e
+vendor/lib/vendor.qti.hardware.fm@1.0.so |1e9063e72c57c421e5946630ed06b5631a891f28
 
 # Camera
 bin/mm-qcamera-daemon
