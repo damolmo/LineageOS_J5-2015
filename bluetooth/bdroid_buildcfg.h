@@ -33,8 +33,6 @@ inline const char* BtmGetDefaultName()
 	} else if (!strcmp("j5lte", device)) {
 		return "Samsung Galaxy J5 SM-J500F/G/M/NO/Y";
 	}
-
-	return "Samsung Galaxy J5";
 }
 
 #define BTM_DEF_LOCAL_NAME BtmGetDefaultName()
