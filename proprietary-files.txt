@@ -26,7 +26,7 @@ vendor/lib/libaptXHD_encoder.so|b65cd3b72ae3e6a57901fd5b5383bfa1a88c5737
 vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti |45986b1685eb84a02832e43937dd504ca4520855
 vendor/etc/init/android.hardware.bluetooth@1.0-service-qti.rc |a979981c55f3dcaf6cf2212e71b901ca4d58b959
 vendor/lib/com.qualcomm.qti.bluetooth_audio@1.0.so |a4292760f507ab39643e23ce2ca004f794134629
-vendor/lib/hw/android.hardware.bluetooth@1.0-impl-qti.so
+vendor/lib/hw/android.hardware.bluetooth@1.0-impl-qti.so |ce3789bc9d89f590aca10c4fa50644ec9086c0a6
 vendor/lib/hw/vendor.qti.hardware.fm@1.0-impl.so |f683332142f45a3212203f41f58dfe1cf50e4cdd
 vendor/lib/libaptX_encoder.so |dcf8b6804153a296c39660119d50a855f345f2d2
 vendor/lib/libaptXHD_encoder.so  |0f5d5d9d79699a25efbdb1ef83fbf18d45b7a12e
