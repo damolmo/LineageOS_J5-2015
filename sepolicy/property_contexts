@@ -1,1 +1,1 @@
-persist.vendor.service.bdroid.bdaddr       u:object_r:bluetooth_prop:s0
+vendor.bluetooth.soc u:object_r:vendor_bluetooth_prop:s0
