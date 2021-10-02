@@ -4,3 +4,12 @@ cc_library {
 
     vendor_available: true,
 }
+
+cc_library {
+    shared_libs: ["libhidlbase"],
+    name: "android.hidl.manager@1.0",
+
+    vendor_available: true,
+}
+
+
