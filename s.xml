@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
   <project name="daviiid99/LineageOS_J5-2015" path="device/samsung/qcom-common" revision="samsung_qcom" />
-  <project name="daviiid99/LineageOS_J5-2015" path="vendor/samsung" revision="samsung_vendor_S" />
-  <project name="daviiid99/LineageOS_J5-2015" path="device/samsung/msm8916-common" revision="samsung_msm8916_common_S" />
+  <project name="daviiid99/LineageOS_J5-2015" path="vendor/samsung" revision="samsung_vendor_s" />
+  <project name="daviiid99/LineageOS_J5-2015" path="device/samsung/msm8916-common" revision="samsung_msm8916_common_s" />
   <project name="daviiid99/LineageOS_J5-2015" path="kernel/samsung/msm8916" revision="samsung_kernel_msm8916" />
-  <project name="daviiid99/LineageOS_J5-2015" path="device/samsung/j5nlte" revision="samsung_j5nlte_S" />
+  <project name="daviiid99/LineageOS_J5-2015" path="device/samsung/j5nlte" revision="samsung_j5nlte_s" />
   <project name="daviiid99/LineageOS_J5-2015" path="device/samsung/j5lte" revision="samsung_j5lte" />
   <project name="daviiid99/LineageOS_J5-2015" path="device/samsung/j5ltechn" revision="samsung_j5ltechn" />
   <project name="daviiid99/LineageOS_J5-2015" path="device/samsung/j53gxx" revision="samsung_j53gxx" />
