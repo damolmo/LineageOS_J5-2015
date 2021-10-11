@@ -12,7 +12,7 @@ Initialize LineageOS repo:
 ```
 mkdir -p ~/android/lineage
 cd ~/android/lineage
-repo init https://github.com/daviiid99/oct.git -b android
+repo init -u git://github.com/LineageOS/android.git -b lineage-18.1
 ```
 <br/>
 
