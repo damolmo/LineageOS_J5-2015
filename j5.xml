@@ -11,6 +11,4 @@
   <project name="daviiid99/LineageOS_J5-2015" path="device/samsung/j5-common" revision="samsung_j5_common" />
   <project name="daviiid99/LineageOS_J5-2015" path="hardware/samsung" revision="samsung_hardware" />
   <project name="daviiid99/LineageOS_J5-2015" path="external/sony/boringssl-compat" revision="sony_boringssl-compat" />
-  <project name="daviiid99/LineageOS_J5-2015" path="hardware/qcom-caf/msm8916/display" revision="samsung_qcom-caf_display" />
-  <project name="daviiid99/LineageOS_J5-2015" path="hardware/qcom-caf/msm8916/media" revision="samsung_qcom-caf_media" />
 </manifest>
