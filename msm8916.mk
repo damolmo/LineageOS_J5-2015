@@ -432,6 +432,7 @@ PRODUCT_PACKAGES += \
     hostapd_cli \
     libwpa_client \
     libwcnss_qmi \
+    wcnss_service\
     wificond \
     wpa_supplicant
     
