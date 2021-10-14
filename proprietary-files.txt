@@ -259,5 +259,9 @@ vendor/lib/mediadrm/libwvdrmengine.so |102f6287cb9949be9999f94f803b4113e4030a34
 vendor/bin/hw/android.hardware.drm@1.2-service.widevine |2491689eba91885a5e61f6c83f35f0c4c64f52d8
 vendor/etc/init/android.hardware.drm@1.2-service.widevine.rc |e3cb732c0bd519988100675edf385d947abf5f6c
 
-
-
+# QUALCOMM WLAN blobs
+vendor/lib/libqmiservices.so |8df18817c510a7d79fab93c10a02205debec5b97
+vendor/lib/libqmi.so |64d200fb5e9f2737b8b3976703658720caf45f97
+vendor/lib/libqcci_legacy.so |282bccd332913969837b91e00125ed58daeaf65c
+vendor/lib/libqmi_client_qmux.so |cd700d2684a5ee0cfe4421deb7109843813f7d19
+vendor/lib/libmdmdetect.so |95801f5422d597d4494c1acb1aab98fd53437898
