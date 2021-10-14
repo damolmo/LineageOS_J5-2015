@@ -25,7 +25,8 @@ BOARD_MAGISK_INIT := true
 # Includes
 TARGET_SPECIFIC_HEADER_PATH += $(COMMON_PATH)/include
 
-BUILD_BROKEN_DUP_RULES := true
+BUILD_BROKEN_ELF_PREBUILT_PRODUCT_COPY_FILES := true
+BUILD_BROKEN_VENDOR_PROPERTY_NAMESPACE := true
 
 # Architecture/platform
 FORCE_32_BIT := true
@@ -202,7 +203,8 @@ TARGET_RECOVERY_FSTAB := $(COMMON_PATH)/rootdir/etc/fstab.qcom
 TARGET_RECOVERY_PIXEL_FORMAT	:= "RGB_565"
 
 # SELinux
-include device/qcom/sepolicy-legacy/sepolicy.mk
+SELINUX_IGNORE_NEVERALLOWS := true
+include device/qcom/sepolicy-legacy-um/SEPolicy.mk
     BOARD_SEPOLICY_DIRS += \
     $(COMMON_PATH)/sepolicy/
 
