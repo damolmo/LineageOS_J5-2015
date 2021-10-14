@@ -26,8 +26,7 @@ COMMON_PATH := device/samsung/msm8916-common
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
-    $(LOCAL_PATH)/overlay \
-    $(LOCAL_PATH)/overlay-lineage
+    $(LOCAL_PATH)/overlay
 
 # APEX
 PRODUCT_COPY_FILES += \
@@ -124,8 +123,7 @@ PRODUCT_PACKAGES += \
     hwcomposer.msm8916 \
     libtinyxml \
     libtinyxml2 \
-    memtrack.msm8916 \
-    vendor.lineage.livedisplay@2.0-service.samsung-qcom
+    memtrack.msm8916 
 
 # DRM
 PRODUCT_PACKAGES += \
