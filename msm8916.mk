@@ -426,15 +426,15 @@ PRODUCT_PACKAGES += \
     com.android.media.remotedisplay.xml
 
 # Wifi
-PRODUCT_PACKAGES += \
-    android.hardware.wifi@1.0-service.legacy \
-    hostapd \
-    hostapd_cli \
-    libwpa_client \
-    libwcnss_qmi \
-    #wcnss_service\
-    wificond \
-    wpa_supplicant
+#PRODUCT_PACKAGES += \
+#    android.hardware.wifi@1.0-service.legacy \
+#    hostapd \
+#    hostapd_cli \
+#    libwpa_client \
+#    libwcnss_qmi \
+#    wcnss_service\
+#    wificond \
+#    wpa_supplicant
     
 # Remove unwanted packages
 PRODUCT_PACKAGES += \
