@@ -198,10 +198,12 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/keylayout/sec_touchscreen.kl:$(TARGET_COPY_OUT_SYSTEM)/usr/keylayout/sec_touchscreen.kl \
     $(LOCAL_PATH)/keylayout/gpio-keys.kl:$(TARGET_COPY_OUT_SYSTEM)/usr/keylayout/gpio-keys.kl
 
-# Keymaster
+# Keymaster HAL
 PRODUCT_PACKAGES += \
-   android.hardware.keymaster@4.0-impl \
-   android.hardware.keymaster@4.0-service
+    android.hardware.keymaster@4.0-service-qti.rc \
+    android.hardware.keymaster@4.1.vendor \
+    android.hardware.keymaster@4.1-service \
+    android.hardware.gatekeeper@1.0-service.software
    DEVICE_MANIFEST_FILE += device/samsung/msm8916-common/Manifest/treble-manifest-keymaster.xml
 
 # HIDL HALs
@@ -354,7 +356,15 @@ PRODUCT_PACKAGES += \
     thermal.msm8916
     
    # Radio
-   DEVICE_MANIFEST_FILE += device/samsung/msm8916-common/Manifest/treble-manifest-radio.xml
+ DEVICE_MANIFEST_FILE += device/samsung/msm8916-common/Manifest/treble-manifest-radio.xml
+     
+   # RIL
+PRODUCT_PACKAGES += \
+    android.hardware.radio@1.6.vendor \
+    android.hardware.radio.config@1.3.vendor \
+    android.hardware.radio.deprecated@1.0.vendor \
+    android.hardware.secure_element@1.2.vendor
+ 
  
 # NFC
 PRODUCT_PACKAGES += \
