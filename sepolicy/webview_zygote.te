@@ -1,3 +1,0 @@
-#============= webview_zygote ==============
-allow webview_zygote app_data_file:dir getattr;
-

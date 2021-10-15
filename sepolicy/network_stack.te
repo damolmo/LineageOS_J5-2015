@@ -1,2 +1,0 @@
-#============= network_stack ==============
-allow network_stack system_file:file lock;

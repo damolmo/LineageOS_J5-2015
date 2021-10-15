@@ -1,2 +1,0 @@
-#============= priv_app ==============
-allow priv_app sysfs_kgsl_gpuclk:file { getattr open read };
