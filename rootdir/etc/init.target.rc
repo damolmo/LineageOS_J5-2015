@@ -1,0 +1,1 @@
+setprop ro.kernel.ebpf.supported false
