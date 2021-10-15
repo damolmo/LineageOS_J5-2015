@@ -32,6 +32,10 @@ BUILD_BROKEN_DUP_SYSPROP := true
 ALLOW_MISSING_DEPENDENCIES=true
 BUILD_BROKEN_DUP_RULES := true
 
+# Privapp-permissions whitelisting
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.control_privapp_permissions=log
+
 # Platform
 PRODUCT_BOARD_PLATFORM_GPU := qcom-adreno306
 PRODUCT_BOARD_PLATFORM := msm8916
