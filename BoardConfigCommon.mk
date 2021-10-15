@@ -39,11 +39,6 @@ PRODUCT_BOARD_PLATFORM_GPU := qcom-adreno306
 PRODUCT_BOARD_PLATFORM := msm8916
 PRODUCT_USES_QCOM_HARDWARE := true
 
-# Properties
-PRODUCT_PROPERTY_OVERRIDES += \
-    sys.use_fifo_ui=1 \
-    debug.renderengine.backend=threaded
-
 # Architecture/platform
 FORCE_32_BIT := true
 TARGET_ARCH := arm
