@@ -53,14 +53,6 @@ cc_library_shared {
     vendor: true,
 }
 
-cc_library_shared {
-    name: "libshim_ril",
-    srcs: [
-        "ril/rild_socket.c"
-    ],
-    vendor: true,
-}
-
 cc_library {
     name: "libbase_shim",
     srcs: ["base/logging.cpp"],
