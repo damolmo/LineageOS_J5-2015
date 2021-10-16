@@ -37,22 +37,6 @@ cc_library_shared {
     vendor: true,
 }
 
-cc_library_shared {
-    name: "libshim_secril",
-    srcs: [
-        "secril/secril_shim.cpp",
-        "secril/strdup8to16.cpp",
-        "secril/strdup16to8.cpp",
-    ],
-    shared_libs: [
-        "liblog",
-        "libcutils",
-        "libbinder",
-        "libutils",
-    ],
-    vendor: true,
-}
-
 cc_library {
     name: "libbase_shim",
     srcs: ["base/logging.cpp"],
