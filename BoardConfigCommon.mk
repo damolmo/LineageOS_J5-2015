@@ -14,6 +14,7 @@
 # limitations under the License.
 
 COMMON_PATH := device/samsung/msm8916-common
+DEVICE_PATH := device/samsung/msm8916-common
 BOARD_VENDOR := samsung
 
 # Magisk Inclusion
