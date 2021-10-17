@@ -427,9 +427,6 @@ PRODUCT_PACKAGES += \
     # Vendor service manager
 PRODUCT_PACKAGES += \
     vndservicemanager
-    
-    # VNDK
-PRODUCT_EXTRA_VNDK_VERSIONS := 28 29 30
 
 # Wifi configuration files
 PRODUCT_COPY_FILES += \
