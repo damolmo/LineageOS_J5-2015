@@ -26,7 +26,7 @@ curl https://raw.githubusercontent.com/daviiid99/LineageOS_J5-2015/Manifest_R/ga
 
 Sync repo:
 ```
-repo sync
+repo sync -c -j$(nproc --all) --force-sync --no-clone-bundle --no-tags
 source build/envsetup.sh
 ```
 <br/>
