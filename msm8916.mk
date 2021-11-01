@@ -23,6 +23,7 @@ $(call inherit-product-if-exists, vendor/samsung/msm8916-common/msm8916-common-v
 
 LOCAL_PATH := device/samsung/msm8916-common
 COMMON_PATH := device/samsung/msm8916-common
+DEVICE_MANIFEST_FILE += device/samsung/msm8916-common/manifest.xml
 
 # Properties
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -101,8 +102,6 @@ PRODUCT_PACKAGES += \
     libcamera_shim \
     libmm-qcamera \
     camera.msm8916 
-
-DEVICE_MANIFEST_FILE += device/samsung/msm8916-common/Manifest/treble-manifest-camera.xml
 
 # Connectivity Engine support
 PRODUCT_PACKAGES += \
@@ -223,7 +222,6 @@ PRODUCT_PACKAGES += \
     android.hardware.keymaster@4.1.vendor \
     android.hardware.keymaster@4.1-service \
     android.hardware.gatekeeper@1.0-service.software
-   DEVICE_MANIFEST_FILE += device/samsung/msm8916-common/Manifest/treble-manifest-keymaster.xml
 
 # HIDL HALs
 $(call inherit-product, $(LOCAL_PATH)/hidl.mk)
@@ -365,17 +363,12 @@ PRODUCT_PACKAGES += \
     android.hardware.sensors@1.0-impl \
     android.hardware.sensors@1.0-service \
     sensors.msm8916
-
-DEVICE_MANIFEST_FILE += device/samsung/msm8916-common/Manifest/treble-manifest-sensors.xml
     
  # Thermal
 PRODUCT_PACKAGES += \
     android.hardware.thermal@1.0-impl \
     android.hardware.thermal@1.0-service \
     thermal.msm8916
-    
-   # Radio
- DEVICE_MANIFEST_FILE += device/samsung/msm8916-common/Manifest/treble-manifest-radio.xml
      
    # RIL
 PRODUCT_PACKAGES += \
@@ -412,8 +405,6 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.nfc.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.nfc.xml \
     frameworks/native/data/etc/com.android.nfc_extras.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/com.android.nfc_extras.xml \
     frameworks/native/data/etc/com.nxp.mifare.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/com.nxp.mifare.xml
-
-DEVICE_MANIFEST_FILE += $(COMMON_PATH)/Manifest/treble-manifest-nfc.xml
    
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
