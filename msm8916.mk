@@ -119,6 +119,10 @@ PRODUCT_DEXPREOPT_SPEED_APPS += \
     TrebuchetQuickStep \
     Settings \
     SystemUI
+    
+# System
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.sys.binary_xml=false
 
 # Display
 PRODUCT_PACKAGES += \
