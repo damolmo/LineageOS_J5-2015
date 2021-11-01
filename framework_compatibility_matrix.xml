@@ -1,5 +1,13 @@
 <compatibility-matrix version="1.0" type="framework">
 <hal format="hidl" optional="true">
+    <name>android.hardware.audio.effect</name>
+    <version>7.0</version>
+    <interface>
+        <name>IEffectsFactory</name>
+        <instance>default</instance>
+    </interface>
+</hal>
+<hal format="hidl" optional="true">
     <name>android.hardware.audio</name>
     <version>7.0</version>
     <interface>
