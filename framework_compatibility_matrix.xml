@@ -1,0 +1,189 @@
+<compatibility-matrix version="1.0" type="device">
+<hal format="hidl" optional="true">
+    <name>android.hardware.keymaster</name>
+    <version>4.0-1</version>
+    <interface>
+        <name>IKeymasterDevice</name>
+        <instance>default</instance>
+    </interface>
+</hal>
+<hal format="hidl" optional="true">
+    <name>android.hardware.light</name>
+    <version>2.0</version>
+    <interface>
+        <name>ILight</name>
+        <instance>default</instance>
+    </interface>
+</hal>
+<hal format="hidl" optional="true">
+    <name>android.hardware.media.omx</name>
+    <version>1.0</version>
+    <interface>
+        <name>IOmx</name>
+        <instance>default</instance>
+    </interface>
+    <interface>
+        <name>IOmxStore</name>
+        <instance>default</instance>
+    </interface>
+</hal>
+<hal format="hidl" optional="true">
+    <name>android.hardware.memtrack</name>
+    <version>1.0</version>
+    <interface>
+        <name>IMemtrack</name>
+        <instance>default</instance>
+    </interface>
+</hal>
+<hal format="hidl" optional="true">
+    <name>android.hardware.nfc</name>
+    <version>1.0-1</version>
+    <interface>
+        <name>INfc</name>
+        <instance>default</instance>
+    </interface>
+</hal>
+<hal format="hidl" optional="true">
+    <name>android.hardware.radio.deprecated</name>
+    <version>1.0</version>
+    <interface>
+        <name>IOemHook</name>
+        <instance>slot1</instance>
+        <instance>slot2</instance>
+    </interface>
+</hal>
+<hal format="hidl" optional="true">
+    <name>android.hardware.radio</name>
+    <version>1.0</version>
+    <interface>
+        <name>IRadio</name>
+        <instance>slot1</instance>
+        <instance>slot2</instance>
+    </interface>
+    <interface>
+        <name>ISap</name>
+        <instance>slot1</instance>
+        <instance>slot2</instance>
+    </interface>
+</hal>
+<hal format="hidl" optional="true">
+    <name>android.hardware.keymaster</name>
+    <version>4.0-1</version>
+    <interface>
+        <name>IKeymasterDevice</name>
+        <instance>default</instance>
+    </interface>
+</hal>
+<hal format="hidl" optional="true">
+    <name>android.hardware.light</name>
+    <version>2.0</version>
+    <interface>
+        <name>ILight</name>
+        <instance>default</instance>
+    </interface>
+</hal>
+<hal format="hidl" optional="true">
+    <name>android.hardware.renderscript</name>
+    <version>1.0</version>
+    <interface>
+        <name>IDevice</name>
+        <instance>default</instance>
+    </interface>
+</hal>
+<hal format="hidl" optional="true">
+    <name>android.hardware.sensors</name>
+    <version>1.0</version>
+    <interface>
+        <name>ISensors</name>
+        <instance>default</instance>
+    </interface>
+</hal>
+<hal format="hidl" optional="true">
+    <name>android.hardware.thermal</name>
+    <version>1.0</version>
+    <interface>
+        <name>IThermal</name>
+        <instance>default</instance>
+    </interface>
+</hal>
+<hal format="hidl" optional="true">
+    <name>android.hardware.usb</name>
+    <version>1.0</version>
+    <interface>
+        <name>IUsb</name>
+        <instance>default</instance>
+    </interface>
+</hal>
+<hal format="hidl" optional="true">
+    <name>android.hardware.vibrator</name>
+    <version>1.0</version>
+    <interface>
+        <name>IVibrator</name>
+        <instance>default</instance>
+    </interface>
+</hal>
+<hal format="hidl" optional="true">
+    <name>android.hardware.wifi.hostapd</name>
+    <version>1.0-3</version>
+    <interface>
+        <name>IHostapd</name>
+        <instance>default</instance>
+    </interface>
+</hal>
+<hal format="hidl" optional="true">
+    <name>android.hardware.wifi.offload</name>
+    <version>1.0</version>
+    <interface>
+        <name>IOffload</name>
+        <instance>default</instance>
+    </interface>
+</hal>
+<hal format="hidl" optional="true">
+    <name>android.hardware.wifi.supplicant</name>
+    <version>1.0-4</version>
+    <interface>
+        <name>ISupplicant</name>
+        <instance>default</instance>
+    </interface>
+</hal>
+<hal format="hidl" optional="true">
+    <name>android.hardware.wifi</name>
+    <version>1.0-4</version>
+    <interface>
+        <name>IWifi</name>
+        <instance>default</instance>
+    </interface>
+</hal>
+<hal format="hidl" optional="true">
+    <name>com.qualcomm.qti.bluetooth_audio</name>
+    <version>1.0</version>
+    <interface>
+        <name>IBluetoothAudio</name>
+        <instance>default</instance>
+    </interface>
+</hal>
+<hal format="hidl" optional="true">
+    <name>vendor.nxp.hardware.nfc</name>
+    <version>1.0</version>
+    <interface>
+        <name>INqNfc</name>
+        <instance>default</instance>
+    </interface>
+</hal>
+<hal format="hidl" optional="true">
+    <name>vendor.nxp.nxpnfc</name>
+    <version>1.0</version>
+    <interface>
+        <name>INxpNfc</name>
+        <instance>default</instance>
+    </interface>
+</hal>
+<hal format="hidl" optional="true">
+    <name>vendor.qti.hardware.cryptfshw</name>
+    <version>1.0</version>
+    <interface>
+        <name>ICryptfsHw</name>
+        <instance>default</instance>
+    </interface>
+</hal>
+</compatibility-matrix>
