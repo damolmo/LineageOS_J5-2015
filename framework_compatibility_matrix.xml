@@ -1,6 +1,135 @@
 <compatibility-matrix version="1.0" type="framework">
 <hal format="hidl" optional="true">
+    <name>android.hardware.audio</name>
+    <version>7.0</version>
+    <interface>
+        <name>IDevicesFactory</name>
+        <instance>default</instance>
+    </interface>
+</hal>
+<hal format="hidl" optional="true">
+    <name>android.hardware.bluetooth.a2dp</name>
+    <version>1.0</version>
+    <interface>
+        <name>IBluetoothAudioOffload</name>
+        <instance>default</instance>
+    </interface>
+</hal>
+<hal format="hidl" optional="true">
+    <name>android.hardware.bluetooth.audio</name>
+    <version>2.0</version>
+    <interface>
+        <name>IBluetoothAudioProvidersFactory</name>
+        <instance>default</instance>
+    </interface>
+</hal>
+<hal format="hidl" optional="true">
+    <name>android.hardware.bluetooth</name>
+    <version>1.0</version>
+    <interface>
+        <name>IBluetoothHci</name>
+        <instance>default</instance>
+    </interface>
+</hal>
+<hal format="hidl" optional="true">
+    <name>android.hardware.camera.provider</name>
+    <version>2.0-4</version>
+    <interface>
+        <name>ICameraProvider</name>
+        <instance>legacy/0</instance>
+    </interface>
+</hal>
+<hal format="hidl" optional="true">
+    <name>android.hardware.cas</name>
+    <version>1.0-2</version>
+    <interface>
+        <name>IMediaCasService</name>
+        <instance>default</instance>
+    </interface>
+</hal>
+<hal format="hidl" optional="true">
+    <name>android.hardware.configstore</name>
+    <version>1.0-1</version>
+    <interface>
+        <name>ISurfaceFlingerConfigs</name>
+        <instance>default</instance>
+    </interface>
+</hal>
+<hal format="hidl" optional="true">
+    <name>android.hardware.drm</name>
+    <version>1.0-4</version>
+    <interface>
+        <name>ICryptoFactory</name>
+        <instance>clearkey</instance>
+        <instance>default</instance>
+        <instance>widevine</instance>
+    </interface>
+    <interface>
+        <name>IDrmFactory</name>
+        <instance>clearkey</instance>
+        <instance>default</instance>
+        <instance>widevine</instance>
+    </interface>
+</hal>
+<hal format="hidl" optional="true">
+    <name>android.hardware.gatekeeper</name>
+    <version>1.0</version>
+    <interface>
+        <name>IGatekeeper</name>
+        <instance>default</instance>
+    </interface>
+</hal>
+<hal format="hidl" optional="true">
+    <name>android.hardware.gnss</name>
+    <version>1.0</version>
+    <interface>
+        <name>IGnss</name>
+        <instance>default</instance>
+    </interface>
+</hal>
+<hal format="hidl" optional="true">
+    <name>android.hardware.graphics.allocator</name>
+    <version>2.0</version>
+    <interface>
+        <name>IAllocator</name>
+        <instance>default</instance>
+    </interface>
+</hal>
+<hal format="hidl" optional="true">
+    <name>android.hardware.graphics.composer</name>
+    <version>2.0-1</version>
+    <interface>
+        <name>IComposer</name>
+        <instance>default</instance>
+    </interface>
+</hal>
+<hal format="hidl" optional="true">
+    <name>android.hardware.graphics.mapper</name>
+    <version>2.0</version>
+    <interface>
+        <name>IMapper</name>
+        <instance>default</instance>
+    </interface>
+</hal>
+<hal format="hidl" optional="true">
+    <name>android.hardware.health</name>
+    <version>2.0-1</version>
+    <interface>
+        <name>IHealth</name>
+        <instance>default</instance>
+    </interface>
+</hal>
+<hal format="hidl" optional="true">
+    <name>android.hardware.ir</name>
+    <version>1.0</version>
+    <interface>
+        <name>IConsumerIr</name>
+        <instance>default</instance>
+    </interface>
+</hal>
+<hal format="hidl" optional="true">
     <name>android.hardware.keymaster</name>
+    <version>3.0</version>
     <version>4.0-1</version>
     <interface>
         <name>IKeymasterDevice</name>
@@ -64,22 +193,6 @@
         <name>ISap</name>
         <instance>slot1</instance>
         <instance>slot2</instance>
-    </interface>
-</hal>
-<hal format="hidl" optional="true">
-    <name>android.hardware.keymaster</name>
-    <version>4.0-1</version>
-    <interface>
-        <name>IKeymasterDevice</name>
-        <instance>default</instance>
-    </interface>
-</hal>
-<hal format="hidl" optional="true">
-    <name>android.hardware.light</name>
-    <version>2.0</version>
-    <interface>
-        <name>ILight</name>
-        <instance>default</instance>
     </interface>
 </hal>
 <hal format="hidl" optional="true">
@@ -186,4 +299,6 @@
         <instance>default</instance>
     </interface>
 </hal>
+
+
 </compatibility-matrix>
