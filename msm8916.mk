@@ -23,7 +23,6 @@ $(call inherit-product-if-exists, vendor/samsung/msm8916-common/msm8916-common-v
 
 LOCAL_PATH := device/samsung/msm8916-common
 COMMON_PATH := device/samsung/msm8916-common
-DEVICE_MANIFEST_FILE += device/samsung/msm8916-common/manifest.xml
 
 # Properties
 PRODUCT_PROPERTY_OVERRIDES += \
