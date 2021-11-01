@@ -16,7 +16,6 @@
 COMMON_PATH := device/samsung/msm8916-common
 DEVICE_PATH := device/samsung/msm8916-common
 BOARD_VENDOR := samsung
-DEVICE_MANIFEST_FILE += device/samsung/msm8916-common/manifest.xml
 
 # Magisk Inclusion
 BOARD_MAGISK_INIT := true
