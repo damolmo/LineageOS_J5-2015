@@ -1,4 +1,4 @@
-<compatibility-matrix version="1.0" type="device">
+<compatibility-matrix version="1.0" type="framework">
 <hal format="hidl" optional="true">
     <name>android.hardware.keymaster</name>
     <version>4.0-1</version>
