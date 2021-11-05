@@ -42,7 +42,7 @@ rm ~/android/lineage/vendor/opengapps/build/modules/TrichromeLibrary/Android.mk 
 
 Remove synced CAF repos (still unusable with building errors)
 ```
-rm -rf hardware/qcom-caf/msm8916/display && rm -rf hardware/qcom-caf/msm8916/media && hardware/qcom-caf/msm8916/audio
+rm -rf hardware/qcom-caf/msm8916/display && rm -rf hardware/qcom-caf/msm8916/media && rm -rf hardware/qcom-caf/msm8916/audio
 git clone -b samsung_qcom-caf_media_R https://github.com/daviiid99/LineageOS_J5-2015 hardware/qcom-caf/msm8916/media
 git clone -b samsung_qcom-caf_audio_R https://github.com/daviiid99/LineageOS_J5-2015 hardware/qcom-caf/msm8916/audio
 git clone -b samsung_qcom-caf_display_R https://github.com/daviiid99/LineageOS_J5-2015 hardware/qcom-caf/msm8916/display
